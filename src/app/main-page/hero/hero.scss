@@ -1,0 +1,89 @@
+@use './../../../styles.scss' as *;
+
+.hero {
+    background-image: url('/img/01_Background/Design Size Relation@3x/01_Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    div:nth-of-type(1){
+        position: relative;
+    };
+}
+
+h1 {
+    font-size: 140px;
+
+    div{
+        display: inline;
+        position: relative;
+
+        img{ 
+            transform: rotate(10deg);
+        }
+
+        img:nth-of-type(1) {
+            margin: 0 40px;
+            position: relative;
+            z-index: 1;
+            width: 170px;
+            height: 230px;
+        }
+
+        img:nth-of-type(2){
+            width: 150px;
+            filter: grayscale(1);
+            position: absolute;
+            right: 50px;
+            top: -90px;
+        }
+    } 
+
+    span:nth-of-type(2) {
+        display: block;
+        text-align: right;
+    }
+}
+
+.hello-world {
+    @include btnStyle();
+    position: absolute;
+    left: 0;
+    top: 30px;
+    cursor: default;
+}
+
+
+button {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    @include btnStyle();
+    @include btnShadow();
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+
+    img {
+        border: 2px solid $font-color-white;
+        border-radius: 50px;
+        width: 40px;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+}
+
+

@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+$font-color-white: #F8F9FA;
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('./../public/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+}
+
+body {
+    font-family: 'Bricolage Grotesque';
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: $font-color-white;
+}
+
+@mixin btnStyle(
+    $border: 2px solid $font-color-white, 
+    )
+{
+    padding: 8px 24px;
+    border: $border;
+    border-radius: 32px;
+    background: none;
+    font-size: 16px;
+    font-family: 'Bricolage Grotesque';
+    cursor: pointer;
+}
+
+@mixin btnShadow(){
+    box-shadow: 2px 4px 0px 0px $font-color-white;
+}
