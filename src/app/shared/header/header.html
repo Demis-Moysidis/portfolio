@@ -1,10 +1,10 @@
 <nav>
     <a class="logo" href="#">DM</a>
     
-    <a class="about-me" href="#">About me</a>
-    <a class="skills" href="#">Skills</a>
-    <a class="projects" href="#">Projects</a>
-    <a class="contact" href="#">Contact</a>  
+    <a class="about-me" href="#">{{ 'header.about-me' | translate }}</a>
+    <a class="skills" href="#" [ngClass]="currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+    <a class="projects" href="#">{{ 'header.projects' | translate }}</a>
+    <a class="contact" href="#">{{ 'header.contact' | translate }}</a>  
 
     <div class="language-toggle">
         <p (click)="toggleLanguage('en')" [ngClass]="currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>

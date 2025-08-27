@@ -16,6 +16,13 @@
         transition: clip-path 300ms ease;
     }
 
+    &.contact-de::after {
+        width: 215px;
+        height: 90px;
+        top: -43px;
+        left: -20px;
+    }
+
     &:hover::after{
         clip-path: inset(0 0 0 0);
     }

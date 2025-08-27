@@ -1,0 +1,14 @@
+{
+    "header": {
+        "about-me": "About me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "hero": {
+        "hello": "Hello world",
+        "i-am": "I'M DEMIS MOYSIDIS",
+        "get-in-touch" : "Get in Touch"
+    }
+}
