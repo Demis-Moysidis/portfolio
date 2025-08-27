@@ -31,8 +31,7 @@
 h1 {
     font-size: 140px;
 
-    span:nth-of-type(2) {
-        display: block;
+    p:nth-of-type(2) {
         text-align: right;
     }
 }
@@ -57,6 +56,30 @@ h1 {
         position: absolute;
         right: 50px;
         top: -90px;
+        transition: all 300ms ease;
+    }
+
+    &:hover img:nth-of-type(2){
+        filter: grayscale(0);
+    }
+
+    &::before {
+        content: "Demis :)";
+        position: absolute;
+        right: 105px;
+        top: 105px;
+        font-family: 'Kalam';
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+        transform: rotate(10deg);
+        z-index: 15;
+        transition: all 300ms ease;
+    }
+
+    &:hover::before {
+        content: "Demis :D";
+        transform: scale(1.05) rotate(10deg);
     }
 }
 
@@ -64,7 +87,7 @@ h1 {
     @include btnStyle();
     position: absolute;
     left: 0;
-    top: -60px;
+    top: -80px;
     cursor: default;
     width: 140px;
     transition: all 400ms ease;
@@ -151,7 +174,7 @@ button {
             position: absolute;
             inset: 0;
             clip-path: circle(0% at center 90%);
-            transition: all 300ms ease;
+            transition: all 500ms ease;
             opacity: 0;
         }
 
@@ -167,4 +190,101 @@ button {
     }
 }
 
+@mixin letter-switch($letter-start, $letter-end){
+    &::before {
+        content: $letter-start;
+        display: inline-block;
+        transform: translateX(-2px);
+        transition: all 300ms ease;
+    }
 
+    &:hover::before {
+        content: '';
+        transform: translateX(0px);
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        transform: translateX(-2px);
+        transition: transform 300ms ease;
+    }
+
+    &:hover::after {
+        content: $letter-end;
+        color: #F7C518;
+        transform: translateX(0px);
+    }
+}
+
+.letter-assignment-frontend {
+    span:nth-of-type(1){
+        @include letter-switch('F', 'f');
+    }
+
+    span:nth-of-type(2){
+        @include letter-switch('r', 'R');
+    }
+
+    span:nth-of-type(3){
+        @include letter-switch('o', 'O');
+    }
+
+    span:nth-of-type(4){
+        @include letter-switch('n', 'N');
+    }
+
+    span:nth-of-type(5){
+        @include letter-switch('t', 'T');
+    }
+
+    span:nth-of-type(6){
+        @include letter-switch('e', 'E');
+    }
+
+    span:nth-of-type(7){
+        @include letter-switch('n', 'N');
+    }
+
+    span:nth-of-type(8){
+        @include letter-switch('d', 'D');
+    }
+}
+
+.letter-assignment-developer {
+    span:nth-of-type(1){
+        @include letter-switch('D', 'd');
+    }
+
+    span:nth-of-type(2){
+        @include letter-switch('E', 'e');
+    }
+
+    span:nth-of-type(3){
+        @include letter-switch('V', 'v');
+    }
+
+    span:nth-of-type(4){
+        @include letter-switch('E', 'e');
+    }
+
+    span:nth-of-type(5){
+        @include letter-switch('L', 'l');
+    }
+
+    span:nth-of-type(6){
+        @include letter-switch('O', 'o');
+    }
+
+    span:nth-of-type(7){
+        @include letter-switch('P', 'p');
+    }
+
+    span:nth-of-type(8){
+        @include letter-switch('E', 'e');
+    }
+
+    span:nth-of-type(9){
+        @include letter-switch('R', 'r');
+    }
+}
