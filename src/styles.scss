@@ -25,6 +25,10 @@ body {
     color: $font-color-white;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 @mixin btnStyle(
     $border: 2px solid $font-color-white, 
     )
@@ -38,12 +42,13 @@ body {
     cursor: pointer;
 }
 
-@mixin btnShadow($x: 2px, $y: 4px){
-    box-shadow: $x $y 0px 0px $font-color-white;
+@mixin btnShadow($x: 2px, $y: 4px, $color: $font-color-white){
+    box-shadow: $x $y 0px 0px $color;
 }
 
 @mixin container(){
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 };

@@ -10,5 +10,15 @@
         "hello": "Hello world",
         "i-am": "I'M DEMIS MOYSIDIS",
         "get-in-touch" : "Get in Touch"
+    },
+
+    "about-me": {
+        "description": "Hi, I'm Demis. I'm passionate about software development because I love the mix of creativity and logical thinking. Every project is a new opportunity to turn complex problems into clear and efficient solutions. My inspiration comes from constantly learning and refining my code to make it more elegant step by step. \n\n Let's bring ideas to life and create something remarkable together!",
+        "based": "Based in Reutlingen",
+        "relocate": "Open to relocate",
+        "remote": "Open to work remote",
+        "title": "About me",
+        "who": "WHO'S DEMIS?",
+        "lets-talk": "Let's talk"
     }
 }

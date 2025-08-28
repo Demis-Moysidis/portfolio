@@ -1,0 +1,140 @@
+@use './../../../styles.scss' as *;
+
+@keyframes underline {
+    0% { clip-path: inset(0 100% 0 0)}
+    10% { clip-path: inset(0 0 0 0)}
+    20% { clip-path: inset(0 0 0 0)}
+    30% { clip-path: inset(0 0 0 0)}
+    40% { clip-path: inset(0 0 0 0)}
+    50% { clip-path: inset(0 0 0 0)}
+    60% { clip-path: inset(0 0 0 0)}
+    70% { clip-path: inset(0 0 0 0)}
+    80% { clip-path: inset(0 0 0 0)}
+    90% { clip-path: inset(0 100%  0 0)}
+    100% { clip-path: inset(0 100% 0 0)}
+}
+
+@mixin about-me-card-content($icon-url, $attr-name){ 
+
+    &::before {
+        content: attr($attr-name);
+        position: absolute;
+        top: 30px;
+        left: 85px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        color: $font-color-white;
+        font-size: 18px;
+        background: url($icon-url) no-repeat left/contain;
+        padding-left: 50px;
+    }
+}
+
+section {
+    background-color: white;
+    display: flex;
+    gap: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include container();
+
+    * {
+        color: #0E1013;
+    }
+
+    h2 {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url('/img/00_Hand-drawn lines/01_About me/Color option 1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 185px;
+            height: 30px;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            animation: underline 6s infinite;
+        }
+    }
+
+    >div:nth-of-type(1){
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        >div {
+            img{
+                width: 400px;
+            }
+        };
+
+        >div:nth-of-type(1) {
+            transform: rotate(-3deg);
+            position: relative;
+            z-index: 10;
+
+            @include about-me-card-content($icon-url: '/icons/location.svg', $attr-name: based-in);
+        }
+
+        >div:nth-of-type(2) {
+            position: relative;
+            z-index: 5;
+
+            @include about-me-card-content($icon-url: '/icons/relocation.svg', $attr-name: relocate);
+        }
+
+        >div:nth-of-type(3) {
+            transform: rotate(3deg);
+
+            @include about-me-card-content($icon-url: '/icons/remote.svg', $attr-name: remote);
+        }
+        
+        >div:not(:first-of-type) {
+            margin-top: -33px;
+        }
+    }
+
+    >div:nth-of-type(2){
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 32px;
+
+        button {
+            @include btnStyle($border: 2px solid #0E1013);
+            @include btnShadow($color: #0E1013);
+            align-self: flex-end;
+            transition: all 125ms ease;
+
+            &:hover {
+                background-color: #F87A55;
+                transform: translateX(3px) translateY(3px);
+                @include btnShadow($x: 0, $y: 0);
+            }
+        }
+
+        >p {
+            font-size: 18px;
+            white-space: pre-line;
+        }
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            p {
+                font-weight: 500;
+                font-size: 16px; 
+            }
+        }
+    }
+}

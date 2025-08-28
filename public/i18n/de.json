@@ -10,5 +10,15 @@
         "hello": "Hallo Welt",
         "i-am": "DEMIS MOYSIDIS hier",
         "get-in-touch" : "Kontakt aufnehmen"
+    },
+
+    "about-me": {
+        "description": "Hi, ich bin Demis. Ich brenne für Softwareentwicklung, weil mich die Kombination aus Kreativität und logischem Denken fasziniert. Jedes Projekt ist für mich eine neue Möglichkeit, komplexe Probleme in klare, effiziente Lösungen zu verwandeln. Inspiration finde ich darin, ständig Neues zu lernen und meinen Code Schritt für Schritt eleganter zu machen. \n\n Lass uns gemeinsam Ideen umsetzen und etwas Besonderes schaffen!",
+        "based": "Ansässig in Reutlingen",
+        "relocate": "Offen für Standortwechsel",
+        "remote": "Offen für Remote-Arbeit",
+        "title": "Über mich",
+        "who": "WER IST DEMIS?",
+        "lets-talk": "Lass uns sprechen"
     }
 }
