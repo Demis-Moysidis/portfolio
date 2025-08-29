@@ -1,0 +1,34 @@
+<section>
+    <div>
+        <div>
+            <p>{{ 'skills.stack' | translate }}</p>
+            <h2>{{ 'skills.title' | translate }}</h2>
+        </div>
+        
+        <p>{{ 'skills.description' | translate}}</p>
+    </div>
+
+    <div>
+        <div class="skills">
+            @for (skill of skills; track $index) {
+                <div>
+                    <img src="{{ skill.url }}" alt="">
+                    <p>{{ skill.name }}</p>
+                </div>
+            }
+        </div>
+
+        <div (click)="peel()">
+            <div [attr.peel-param]="currentPeelImg" [attr.pull-to-peel]="('skills.pull-to-peel' | translate)">
+                <img  src="./img/03_Stickers/01_Skills - Peel off/Default.png" alt="">
+            </div>
+            <div [attr.peel-param]="currentPeelImg">
+                <img  src="./img/03_Stickers/01_Skills - Peel off/Transition.png" alt="">
+            </div>
+            <div [attr.peel-param]="currentPeelImg" [attr.react-and-vue]="('skills.react-and-vue' | translate)">
+                <img  src="./img/03_Stickers/01_Skills - Peel off/Final.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+</section>

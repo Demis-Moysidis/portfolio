@@ -1,0 +1,199 @@
+@use './../../../styles.scss' as *;
+
+@keyframes rotate-animation {
+    0% {transform: scale(0) rotate(-90deg) scaleX(-1); transform-origin: 80% center}
+    10% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    30% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    40% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    20% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    50% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    60% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    70% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    80% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    90% {transform: scale(1) rotate(0deg) scaleX(-1); transform-origin: 50% center} 
+    100% {transform: scale(0) rotate(-90deg) scaleX(-1); transform-origin: 80% center} 
+}
+
+@mixin pull-to-peel(){
+    &::before {
+        content: attr(pull-to-peel);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        font-family: 'Kalam';
+        font-size: 36px;
+        white-space: pre;
+        line-height: 1.2;
+        color: $font-color-white;
+        text-align: center;
+    }
+
+    &::after {
+        content: '';
+        background: url('/img/03_Stickers/Arrow.png') no-repeat center/contain;
+        position: absolute;
+        top: 20px;
+        left: 65px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+:host {
+    background-image: url('/img/01_Background/Img Original Size/Skills BG.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 120px;
+    padding-bottom: 220px;
+    @include container();
+
+    h2 {
+        color: $font-color-white;
+        white-space: nowrap;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0; 
+            background: url('/img/00_Hand-drawn lines/02_Skills/Color option 1.png') no-repeat center/100% 100%;
+            z-index: -1;
+            
+            animation: rotate-animation 7s infinite;
+        }
+    }
+
+    >div:nth-of-type(1) {
+        display: flex;
+        gap: 40px;
+        padding-left: 50px;
+
+        >p:first-of-type {
+            flex-shrink: 0;
+            font-size: 20px;
+            width: 845px;
+            height: 165px;
+            padding: 35px;
+            color: #0E1013;
+            background: url('/img/02_Ripped Paper/1.Skills description.png') no-repeat center/contain;
+            display: flex;
+            align-items: center;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            p {
+                align-self: end;
+                font-size: 18px;
+            }
+        }
+    }
+
+    >div:nth-of-type(2) {
+        display: flex;
+        justify-content: end;
+        gap: 40px;
+        padding-right: 50px;
+            
+        >div:nth-of-type(2){
+            width: 200px;
+            transform: rotate(8deg);
+            cursor: pointer;
+
+            >div {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    width: 185px;
+                    object-fit: contain;
+                    opacity: 0;
+                }
+            }
+
+            >div:nth-of-type(1)[peel-param="1"]{   
+                img{
+                    opacity: 1;
+                }
+                @include pull-to-peel();
+            }
+
+            >div:nth-of-type(2)[peel-param="2"]{
+                img{
+                    opacity: 1;
+                }
+            }
+
+            >div:nth-of-type(3)[peel-param="3"]{
+                img{
+                    opacity: 1;
+                }
+
+                &::before {
+                    content: attr(react-and-vue);
+                    white-space: pre;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -125%);
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                &::after {
+                    content: '';
+                    background: url('/icons/skills/react-and-vue.svg') no-repeat center/contain;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 41px;
+                    width: 100px;
+                    height: 70px;
+                }
+            }
+
+            
+        }
+    }
+}
+
+.skills {
+    width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 24px;
+
+    >div {
+        text-align: center;
+        white-space: pre-wrap;
+        width: 85px;
+
+        >img {
+            width: 60px;
+            filter: grayscale(1);
+            transition: transform 300ms ease;
+
+            &:hover {
+                filter: grayscale(0);
+                transform: scale(0.8);
+            }
+
+        }
+    }
+}

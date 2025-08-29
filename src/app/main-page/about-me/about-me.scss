@@ -14,18 +14,18 @@
     100% { clip-path: inset(0 100% 0 0)}
 }
 
-@mixin about-me-card-content($icon-url, $attr-name){ 
+@mixin about-me-card-content($icon-url, $attr-name, $top){ 
 
     &::before {
         content: attr($attr-name);
         position: absolute;
-        top: 30px;
-        left: 85px;
+        top: $top;
+        left: 120px;
         height: 36px;
         display: flex;
         align-items: center;
         color: $font-color-white;
-        font-size: 18px;
+        font-size: 20px;
         background: url($icon-url) no-repeat left/contain;
         padding-left: 50px;
     }
@@ -35,8 +35,8 @@ section {
     background-color: white;
     display: flex;
     gap: 32px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     @include container();
 
     * {
@@ -51,10 +51,10 @@ section {
             background-image: url('/img/00_Hand-drawn lines/01_About me/Color option 1.png');
             background-repeat: no-repeat;
             background-size: contain;
-            width: 185px;
+            width: 300px;
             height: 30px;
             position: absolute;
-            top: 45px;
+            top: 70px;
             left: 0;
             animation: underline 6s infinite;
         }
@@ -70,7 +70,7 @@ section {
 
         >div {
             img{
-                width: 400px;
+                width: 500px;
             }
         };
 
@@ -79,24 +79,27 @@ section {
             position: relative;
             z-index: 10;
 
-            @include about-me-card-content($icon-url: '/icons/location.svg', $attr-name: based-in);
+            @include about-me-card-content($icon-url: '/icons/location.svg', $attr-name: based-in, $top: 40px);
         }
 
         >div:nth-of-type(2) {
             position: relative;
             z-index: 5;
 
-            @include about-me-card-content($icon-url: '/icons/relocation.svg', $attr-name: relocate);
+            @include about-me-card-content($icon-url: '/icons/relocation.svg', $attr-name: relocate, $top: 45px);
         }
 
         >div:nth-of-type(3) {
             transform: rotate(3deg);
 
-            @include about-me-card-content($icon-url: '/icons/remote.svg', $attr-name: remote);
+            @include about-me-card-content($icon-url: '/icons/remote.svg', $attr-name: remote, $top: 50px);
+            &::before {
+                transform: rotate(3deg);
+            }
         }
         
         >div:not(:first-of-type) {
-            margin-top: -33px;
+            margin-top: -45px;
         }
     }
 
@@ -122,7 +125,7 @@ section {
         }
 
         >p {
-            font-size: 18px;
+            font-size: 20px;
             white-space: pre-line;
         }
 
@@ -133,7 +136,7 @@ section {
 
             p {
                 font-weight: 500;
-                font-size: 16px; 
+                font-size: 18px; 
             }
         }
     }

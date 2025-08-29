@@ -20,5 +20,13 @@
         "title": "Über mich",
         "who": "WER IST DEMIS?",
         "lets-talk": "Lass uns sprechen"
+    },
+    
+    "skills": {
+        "title": "Kenntnisse",
+        "stack": "MEIN STACK",
+        "description": "Ich entwickel gerne moderne und responsive Webanwendungen. Mein Fokus liegt darauf, klare, effiziente und benutzerfreundliche Oberflächen zu gestalten. Ich erkunde kontinuierlich neue Tools und Frameworks, um mein Können stetig zu erweitern.",
+        "pull-to-peel": "Hier\nAbziehen",
+        "react-and-vue": "Ich interessiere\n mich auch für:"
     }
 }
