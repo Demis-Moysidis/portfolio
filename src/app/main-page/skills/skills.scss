@@ -80,13 +80,11 @@ section {
         padding-left: 50px;
 
         >p:first-of-type {
-            flex-shrink: 0;
             font-size: 20px;
-            width: 845px;
-            height: 165px;
-            padding: 35px;
+            width: 750px;
+            padding: 55px 24px;
             color: #0E1013;
-            background: url('/img/02_Ripped Paper/1.Skills description.png') no-repeat center/contain;
+            background: url('/img/02_Ripped Paper/1.Skills description.png') no-repeat center / 100% 100%;
             display: flex;
             align-items: center;
         }

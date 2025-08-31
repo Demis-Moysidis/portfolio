@@ -1,0 +1,236 @@
+@use './../../../styles.scss' as *;
+
+* {
+    color: #0E1013;
+}
+
+@keyframes underline {
+    0% { clip-path: inset(0 100% 0 0)}
+    10% { clip-path: inset(0 0 0 0)}
+    20% { clip-path: inset(0 0 0 0)}
+    30% { clip-path: inset(0 0 0 0)}
+    40% { clip-path: inset(0 0 0 0)}
+    50% { clip-path: inset(0 0 0 0)}
+    60% { clip-path: inset(0 0 0 0)}
+    70% { clip-path: inset(0 0 0 0)}
+    80% { clip-path: inset(0 0 0 0)}
+    90% { clip-path: inset(0 100%  0 0)}
+    100% { clip-path: inset(0 100% 0 0)}
+}
+
+@keyframes floaty {
+    0%   { transform: translateY(-15px); }
+    50%  { transform: translateY(15px); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes hover {
+    from {transform: scale(1) translate(0px, 0px)}
+    to {transform: scale(1.1) translate(-30px, -10px)}
+}
+
+@mixin single-project-content(){
+    gap: 12px;
+
+    p:first-of-type {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    >div {
+        border-radius: 24px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            >img:first-of-type {
+                transform: scale(1.1);   
+            }
+
+            button {
+                opacity: 1;
+            }
+        }
+
+        >img:first-of-type {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 400ms ease;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            transition: all 300ms ease;
+            opacity: 0;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+        
+        button {
+            position: absolute;
+            z-index: 20;
+            bottom: 10%;
+            right: 8%;
+            color: white;
+            transition: all 125ms ease;
+            opacity: 0;
+
+            @include btnStyle();
+            @include btnShadow();
+
+            &:hover {
+                background-color: #F87A55;
+                @include btnShadow($x: 0px, $y: 0px);
+                bottom: calc(10% - 3px);
+                right: calc(8% - 3px);
+            }
+        }
+    }
+
+    &[floaty='true']{
+        >div {
+            >img:first-of-type {
+                animation: floaty 5s ease infinite;  
+            }
+        }
+
+
+        >div {
+            &:hover {
+                >img:first-of-type {
+                    animation: hover 400ms ease forwards; 
+                }
+            }
+        }
+    }
+}
+
+@mixin svg-text($top, $left, $font-weigth, $letter-spacing){
+    position: absolute;
+    top: $top;
+    left: $left;
+    overflow: visible;
+    width: 100px;
+    height: 60px;
+
+    path {
+        fill: none;
+    }
+
+    text {
+        font-size: 20px;
+        font-weight: $font-weigth;
+        letter-spacing: $letter-spacing;
+        fill: $font-color-white;
+    }
+}
+
+section {
+    @include container();
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    >div {
+        display: flex;
+        
+        >div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+    }
+}
+
+.first-content {
+    justify-content: center;
+    gap: 60px;
+
+    p:nth-of-type(1) {
+        font-size: 20px;
+    }
+}
+
+.second-content {
+    @include single-project-content();
+
+    >div {
+        >div {
+            position: absolute;
+            top: 40%;
+            left: 0px;
+            width: 150px;
+            height: 150px;
+
+            .logo {
+                font-family: 'Monoton';
+                font-weight: 400;
+                font-size: 28px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $font-color-white;
+            }
+
+            >img {
+                width: 100%;
+                height: 100%;
+            }
+
+            >svg:first-of-type {
+                @include svg-text($top: 2px, $left: 25px, $font-weigth: bold, $letter-spacing: 0px);
+            }
+
+            >svg:nth-of-type(2) {
+                @include svg-text($top: -10px, $left: 15px, $font-weigth: 400, $letter-spacing: 1px);
+            }
+        }
+    }
+}
+
+.third-content {
+    @include single-project-content();
+}
+
+.fourth-content {
+    @include single-project-content();
+}
+
+.title {
+    p {
+        font-size: 18px;    
+    }
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        background: url('/img/00_Hand-drawn lines/03_Portfolio/Color option 1.png') no-repeat center/contain;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 40px;
+
+        animation: underline 6s infinite; 
+    }
+}
