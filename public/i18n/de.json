@@ -28,5 +28,17 @@
         "description": "Ich begeistere mich für die Entwicklung von modernen und responsiven Webanwendungen. Mein Fokus liegt darauf, klare, effiziente und benutzerfreundliche Oberflächen zu gestalten. Ich erkunde kontinuierlich neue Tools und Frameworks, um mein Können stetig zu erweitern.",
         "pull-to-peel": "Hier\nAbziehen",
         "react-and-vue": "Ich interessiere\n mich auch für:"
+    },
+
+    "projects": {
+        "craft": "MEIN HANDWERK",
+        "title": "Projekte",
+        "description": "Entdecke meine Projekte! Sie sind responsiv, benutzerfreundlich und mit sauberem, effizientem Code entwickelt – für reibungslose Performance auf jedem Gerät.",
+        "details": "Projektdetails",
+        "progress": "In Arbeit",
+        "all-details": "Alle Details ansehen",
+        "join": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
+        "el-pollo-loco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
+        "pokedex": "Diese App ist ein Pokédex - eine digitale Enzyklopädie aus dem Pokémon-Universum, die detaillierte Informationen über verschiedene Pokémon liefert, einschließlich ihrer Fähigkeiten, Typen und Entwicklungen."
     }
 }

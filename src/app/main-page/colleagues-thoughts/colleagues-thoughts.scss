@@ -1,0 +1,141 @@
+@use './../../../styles.scss' as *;
+
+* {
+    color: #0E1013;
+}
+
+@keyframes show-arrow {
+    0% { clip-path: inset(0 0 0 100%)}
+    10% { clip-path: inset(0 0 0 0)}
+    20% { clip-path: inset(0 0 0 0)}
+    30% { clip-path: inset(0 0 0 0)}
+    40% { clip-path: inset(0 0 0 0)}
+    50% { clip-path: inset(0 0 0 0)}
+    60% { clip-path: inset(0 0 0 0)}
+    70% { clip-path: inset(0 0 0 0)}
+    80% { clip-path: inset(0 0 0 0)}
+    90% { clip-path: inset(0 0 0 100%)}
+    100% { clip-path: inset(0 0 0 100%)}
+}
+
+@mixin colleagues-card($img-url, $rotate, $z-index) {
+    background: url($img-url) no-repeat center/contain;
+    width: 500px;
+    height: 300px;
+    transform: rotate($rotate);
+    z-index: $z-index;
+    padding: 30px 45px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 300ms ease;
+    cursor: default;
+    
+
+    &:hover {
+        background: url('/img/03_Stickers/02_Testimonials/Color option 1/Hover.png') no-repeat center/contain, 
+                    url($img-url) no-repeat center/contain;
+        z-index: 20;
+        transform: scale(1.01) rotate($rotate);
+
+        >div {
+
+            >p:nth-of-type(1) {
+                color: $font-color-white;
+            }
+
+            span {
+                color: $font-color-white;
+            }
+        }
+    }
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+
+        >p:nth-of-type(2) {
+            align-self: flex-end;
+            position: relative;
+            cursor: pointer;
+            
+            &::before {
+                content: '';
+                background: url('/icons/linkedIn.svg') no-repeat center/contain;
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                top: -5px;
+                left: -35px;
+                filter: invert(1);
+            }
+
+            &:hover::before {
+                filter: invert(0);
+            }
+
+            &:hover {
+                color: $font-color-white;
+            }
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+section {
+    @include container-section();
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: url('/img/00_Hand-drawn lines/04_Testimonials/Color option 1.png') no-repeat center/contain;
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            top: -5px;
+            right: 150px;
+            
+            animation: show-arrow 5s ease infinite;
+        }
+
+        >p {
+            font-size: 18px;
+        }
+    }
+
+    >div:nth-of-type(2) {
+        display: flex;
+    }
+}
+
+.first-card {
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A.png', $rotate: -5deg, $z-index: 15);
+}
+
+.second-card {
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/B.png', $rotate: 0deg, $z-index: 10);
+
+    position: relative;
+    top: 30px;
+    margin-left: -130px;
+    margin-right: -130px;
+}
+
+.third-card {
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A.png', $rotate: 5deg, $z-index: 5);
+}

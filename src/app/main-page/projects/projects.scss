@@ -47,6 +47,7 @@
         overflow: hidden;
         cursor: pointer;
         position: relative;
+        // height: 375px;
 
         &:hover {
             >img:first-of-type {
@@ -121,7 +122,7 @@
     }
 }
 
-@mixin svg-text($top, $left, $font-weigth, $letter-spacing){
+@mixin svg-text($top, $left, $font-weigth, $letter-spacing, $font-size){
     position: absolute;
     top: $top;
     left: $left;
@@ -134,7 +135,7 @@
     }
 
     text {
-        font-size: 20px;
+        font-size: $font-size;
         font-weight: $font-weigth;
         letter-spacing: $letter-spacing;
         fill: $font-color-white;
@@ -142,18 +143,21 @@
 }
 
 section {
-    @include container();
-    padding-top: 100px;
-    padding-bottom: 100px;
+    @include container-section();
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 
     >div {
         display: flex;
+        gap: 100px;
         
         >div {
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 60px;
         }
     }
 }
@@ -162,7 +166,13 @@ section {
     justify-content: center;
     gap: 60px;
 
-    p:nth-of-type(1) {
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    >p{
         font-size: 20px;
     }
 }
@@ -195,11 +205,11 @@ section {
             }
 
             >svg:first-of-type {
-                @include svg-text($top: 2px, $left: 25px, $font-weigth: bold, $letter-spacing: 0px);
+                @include svg-text($top: 2px, $left: 25px, $font-weigth: bold, $letter-spacing: 0px, $font-size: 20px);
             }
 
             >svg:nth-of-type(2) {
-                @include svg-text($top: -10px, $left: 15px, $font-weigth: 400, $letter-spacing: 1px);
+                @include svg-text($top: -10px, $left: 15px, $font-weigth: 400, $letter-spacing: 1px, $font-size: 18px);
             }
         }
     }
@@ -211,6 +221,12 @@ section {
 
 .fourth-content {
     @include single-project-content();
+    >div:first-of-type {
+        >img{
+            width: 104%;
+            transform: translateX(-2%);
+        }
+    }
 }
 
 .title {
@@ -221,16 +237,16 @@ section {
 
 h2 {
     position: relative;
-    display: inline-block;
+    width: fit-content;
 
     &::before {
         content: '';
         background: url('/img/00_Hand-drawn lines/03_Portfolio/Color option 1.png') no-repeat center/contain;
         position: absolute;
-        top: 70px;
+        top: 80px;
         width: 100%;
         height: 40px;
-
+    
         animation: underline 6s infinite; 
     }
 }

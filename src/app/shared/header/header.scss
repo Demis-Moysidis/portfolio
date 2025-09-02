@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include container();
+    @include container-hero-and-header();
     
 
     a:not(:first-child) {

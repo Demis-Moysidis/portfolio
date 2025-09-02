@@ -17,7 +17,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    @include container();
+    @include container-hero-and-header();
     display: flex;
     justify-content: center;
     align-items: center;

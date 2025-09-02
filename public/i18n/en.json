@@ -28,5 +28,17 @@
         "description": "I am passionate about building modern and responsive web applications. My focus is on creating clean, efficient, and user-friendly interfaces. I continuously explore new tools and frameworks to expand my skill set.",
         "pull-to-peel": "Pull to\npeel",
         "react-and-vue": "Also, I'm interested\nin diving into:"
+    },
+
+    "projects": {
+        "craft": "MY CRAFT",
+        "title": "Projects",
+        "description": "Explore my projects! They're built to be responsive, user-friendly, and powered by clean, efficient code for smooth performance on any device.",
+        "details": "Project details",
+        "progress": "In Progress",
+        "all-details": "Check all details",
+        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "el-pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "pokedex": "This app is a Pokédex - a digital encyclopedia from the Pokémon universe that provides detailed information about different Pokémon, including their abilities, types, and evolutions."
     }
 }
