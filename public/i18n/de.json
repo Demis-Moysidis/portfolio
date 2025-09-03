@@ -40,5 +40,26 @@
         "join": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
         "el-pollo-loco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
         "pokedex": "Diese App ist ein Pokédex - eine digitale Enzyklopädie aus dem Pokémon-Universum, die detaillierte Informationen über verschiedene Pokémon liefert, einschließlich ihrer Fähigkeiten, Typen und Entwicklungen."
+    },
+
+    "colleagues": {
+        "words": "IN IHREN WORTEN",
+        "title": "Kommentare der Kollegen",
+        "first-card": {
+            "comment": "Demis hat das Team wirklich mit seiner großartigen Organisation und klaren Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+            "author": "Tobias Lange",
+            "profession": "Frontend Entwickler"
+        },
+        "second-card": {
+            "comment": "Es war eine große Freude, mit Demis zusammenzuarbeiten. Er weiß, wie man Teammitglieder motiviert und ermutigt, die bestmögliche Arbeit zu präsentieren, und bringt immer neue Ideen ins Brainstorming ein.",
+            "author": "Maria Schäfer",
+            "profession": "Frontend Entwicklerin"
+        },
+        "third-card": {
+            "comment": "Demis war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+            "author": "David Braun",
+            "profession": "Frontend Entwickler"
+        },
+        "profile": "Profil"
     }
 }

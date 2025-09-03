@@ -19,9 +19,9 @@
 }
 
 @mixin colleagues-card($img-url, $rotate, $z-index) {
-    background: url($img-url) no-repeat center/contain;
+    background: url($img-url) no-repeat center/100% 100%;
     width: 500px;
-    height: 300px;
+    min-height: 300px;
     transform: rotate($rotate);
     z-index: $z-index;
     padding: 30px 45px;
@@ -29,13 +29,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 24px;
     transition: all 300ms ease;
     cursor: default;
     
 
     &:hover {
-        background: url('/img/03_Stickers/02_Testimonials/Color option 1/Hover.png') no-repeat center/contain, 
-                    url($img-url) no-repeat center/contain;
+        background: url('/img/03_Stickers/02_Testimonials/Color option 1/Hover.png') no-repeat center/100% 100%, 
+                    url($img-url) no-repeat center/100% 100%;
         z-index: 20;
         transform: scale(1.01) rotate($rotate);
 
@@ -55,7 +56,7 @@
         display: flex;
         justify-content: space-between;
 
-        >p:nth-of-type(2) {
+        >a {
             align-self: flex-end;
             position: relative;
             cursor: pointer;
@@ -92,7 +93,7 @@ section {
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 
     >div:first-of-type {
         display: flex;
@@ -101,20 +102,21 @@ section {
         gap: 8px;
         position: relative;
 
-        &::before {
+        >p::before {
             content: '';
             background: url('/img/00_Hand-drawn lines/04_Testimonials/Color option 1.png') no-repeat center/contain;
             position: absolute;
             width: 100px;
             height: 40px;
             top: -5px;
-            right: 150px;
+            left: -110px;
             
             animation: show-arrow 5s ease infinite;
         }
 
         >p {
             font-size: 18px;
+            position: relative;
         }
     }
 
