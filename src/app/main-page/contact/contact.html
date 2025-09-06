@@ -1,0 +1,89 @@
+<section id="contact">
+    <div>
+        <div class="title">
+            <p>{{'contact.contact-me' | translate}}</p>
+            <h2>{{'contact.title' | translate}}</h2>
+        </div>
+        <p>{{'contact.description' | translate}}</p>
+        <img src="./img/00_Hand-drawn lines/05_Contact/Color option 1.png" alt="">
+    </div>
+    <div>
+        <div class="sticker-round">
+            <img src="./img/03_Stickers/00_Round/01_Color option 1- Orange.png" alt="">
+            
+            <p class="logo">DM</p>
+
+            <svg >
+                <path id="semicircle-top" d="M 0 75 A 50 50 0 0 1 100 75"/>
+                <text text-anchor="middle">
+                    <textPath href="#semicircle-top" startOffset="50%">
+                        Demis Moysidis
+                    </textPath>
+                </text>
+            </svg>
+
+            <svg >
+                <path id="semicircle-bottom" d="M 0 85 A 60 60 0 0 0 120 85"/>
+                <text text-anchor="middle">
+                    <textPath href="#semicircle-bottom" startOffset="50%">
+                        {{'contact.developer' | translate}}
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <div>
+                <label for="name">{{'contact.input-name.title' | translate}}</label>
+                <input 
+                    #name="ngModel" 
+                    [ngClass]="{'required': form.submitted && name.errors?.['required']}" 
+                    [placeholder]="form.submitted && name.errors?.['required'] ? ('contact.input-name.required' | translate) : ('contact.input-name.placeholder' | translate)" 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    [(ngModel)]="contactData.name" 
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">{{'contact.input-email.title' | translate}}</label>
+                <input 
+                    #email="ngModel" 
+                    [ngClass]="{'required': form.submitted && email.errors?.['required']}" 
+                    [placeholder]="form.submitted && email.errors?.['required'] ? ('contact.input-email.required' | translate) : ('contact.input-email.placeholder' | translate)" 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    [(ngModel)]="contactData.email"
+                    required 
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                >
+            </div>
+
+            <div>
+                <label for="message">{{'contact.input-message.title' | translate}}</label>
+                <input 
+                    #message="ngModel" 
+                    [ngClass]="{'required': form.submitted && message.errors?.['required']}" 
+                    [placeholder]="form.submitted && message.errors?.['required'] ? ('contact.input-message.required' | translate) : ('contact.input-message.placeholder' | translate)" 
+                    type="text" 
+                    id="message" 
+                    name="message" 
+                    [(ngModel)]="contactData.message" 
+                    required
+                >
+            </div>
+
+            <div class="privacy-policy">
+                <input type="checkbox" name="privacy-policy" id="privacy-policy" required #privacy_policy="ngModel" ngModel>
+                <p>{{'contact.privacy-policy.first' | translate}} <a href="">{{'contact.privacy-policy.link' | translate}}</a> {{'contact.privacy-policy.second' | translate}}</p>
+            </div>
+
+            <p [ngClass]="{'invalid-email': form.submitted && email.errors?.['pattern']}" class="error-massage">{{'contact.invalid-email' | translate}}</p>
+
+            <button class="send-form-btn" type="submit" [disabled]="privacy_policy.invalid">{{'contact.send' | translate}}</button>
+        </form>
+    </div>
+
+</section>

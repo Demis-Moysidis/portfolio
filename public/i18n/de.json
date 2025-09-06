@@ -61,5 +61,34 @@
             "profession": "Frontend Entwickler"
         },
         "profile": "Profil"
+    },
+
+    "contact": {
+        "contact-me": "KONTAKTIERE MICH",
+        "title": "Bereit für eine Zusammenarbeit?",
+        "description": "Ich würde mich freuen, mit dir in Kontakt zu treten und Möglichkeiten zu entdecken, bei denen ich meine Fähigkeiten und Energie einbringen kann. Besonders interessiert bin ich an Rollen, in denen ich an der Entwicklung und Verbesserung wirkungsvoller Projekte mitarbeiten kann. \n\nWenn du jemanden suchst, der frische Ideen, Engagement und Anpassungsfähigkeit in dein nächstes Projekt einbringt, würde ich mich sehr freuen, meinen Beitrag zu leisten.",
+        "developer": "Frontend Entwickler",
+        "input-name": {
+            "title": "Wie heißt du?",
+            "placeholder": "Dein Name kommt hierhin",
+            "required": "Hoppla! Dein Name fehlt noch"
+        },
+        "input-email": {
+            "title": "Wie lautet deine E-Mail?",
+            "placeholder": "deineemail@email.com",
+            "required": "Hoppla! Deine E-Mail wird benötigt"
+        },
+        "input-message": {
+            "title": "Wobei kann ich dir helfen?",
+            "placeholder": "Hallo Demis, ich interessiere mich für...",
+            "required": "Worum geht es bei deinem Anliegen?"
+        },
+        "privacy-policy": {
+            "first": "Ich habe die",
+            "link": "Datenschutzerklärung",
+            "second": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+        },
+        "invalid-email": "Bitte gib eine gültige E-Mail-Adresse ein.",
+        "send": "Senden"
     }
 }

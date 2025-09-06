@@ -1,0 +1,256 @@
+@use './../../../styles.scss' as *;
+
+@keyframes underline {
+    0% { clip-path: inset(0 100% 0 0)}
+    10% { clip-path: inset(0 0 0 0)}
+    20% { clip-path: inset(0 0 0 0)}
+    30% { clip-path: inset(0 0 0 0)}
+    40% { clip-path: inset(0 0 0 0)}
+    50% { clip-path: inset(0 0 0 0)}
+    60% { clip-path: inset(0 0 0 0)}
+    70% { clip-path: inset(0 0 0 0)}
+    80% { clip-path: inset(0 0 0 0)}
+    90% { clip-path: inset(0 100%  0 0)}
+    100% { clip-path: inset(0 100% 0 0)}
+}
+
+@mixin svg-text($top, $left, $font-weigth, $letter-spacing, $font-size){
+    position: absolute;
+    top: $top;
+    left: $left;
+    overflow: visible;
+    width: 100px;
+    height: 60px;
+
+    path {
+        fill: none;
+    }
+
+    text {
+        font-size: $font-size;
+        font-weight: $font-weigth;
+        letter-spacing: $letter-spacing;
+        fill: #0E1013;
+    }
+}
+
+:host {
+    background: url('/img/01_Background/Design Size Relation@3x/06_Contact.png') no-repeat top/cover;
+    display: block;
+}
+
+section {
+    display: flex;
+    gap: 80px;
+    @include container-section();
+    padding-top: 130px;
+    padding-bottom: 200px;
+
+    >div {
+        flex: 1;
+    }
+
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        p {
+            white-space: pre-wrap;
+            font-size: 20px;
+        }
+
+        img {
+            width: 250px;
+            align-self: end;
+            clip-path: inset(0 100% 0 0);
+            animation: underline 6s infinite;
+        }
+    }
+
+    >div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        >form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        >form div:not(:last-of-type) {
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                label {
+                    color: #F87A55;
+                }
+
+                input {
+                    border-bottom: 2px solid #3355FF;
+                }
+            }
+        }
+
+        label {
+            padding-left: 18px;
+            font-size: 24px;
+            transition: all 250ms ease;
+        }
+
+        input[type="email"],
+        input[type="text"] {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #F7C518;
+            padding: 12px 18px;
+            font-size: 20px;
+            transition: all 250ms ease;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.required {
+    &::placeholder {
+        color: #c54017;
+    }
+}
+
+.privacy-policy {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+
+    input {
+        min-width: 21px;
+        height: 21px;
+        appearance: none;
+        border: 3px solid #3355FF;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &::before {
+            content: "";
+            border-radius: 4px;
+            position: absolute;
+            top: -5px;
+            left: -4px;
+            background: rgba(51, 85, 255, 0.3);
+            width: 25px;
+            height: 26px;
+            transition: all 125ms ease;
+            opacity: 0;
+        }
+
+        &:checked::after {
+            content: '';
+            background: url('/img/00_Hand-drawn lines/05_Contact/check.png') no-repeat center/contain;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -2px;
+            left: 0px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #3355FF;
+        transition: all 125ms ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #F7C518;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    h2 {
+        line-height: 1;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.send-form-btn {
+    @include btnStyle();
+    @include btnShadow();
+    transition: all 125ms ease;
+    width: 130px;
+    align-self: flex-end;
+
+    &:hover {
+        background-color: #F87A55;
+        box-shadow: 0px 0px 0px 0px $font-color-white;
+        transform: translate(3px, 3px);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.error-massage {
+    color: #F87A55;
+    opacity: 0;
+    cursor: default;
+
+    &.invalid-email {
+        opacity: 1;
+    }
+}
+
+.sticker-round {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    align-self: flex-end;
+    margin-bottom: -20px;
+    transform: rotate(8deg);
+    cursor: default;
+
+    .logo {
+        font-family: 'Monoton';
+        font-weight: 400;
+        font-size: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #0E1013;
+    }
+
+    >img {
+        width: 100%;
+        height: 100%;
+    }
+
+    >svg:first-of-type {
+        @include svg-text($top: 2px, $left: 25px, $font-weigth: bold, $letter-spacing: 0px, $font-size: 16px);
+    }
+
+    >svg:nth-of-type(2) {
+        @include svg-text($top: -10px, $left: 15px, $font-weigth: bold, $letter-spacing: 1px, $font-size: 16px);
+    }
+}

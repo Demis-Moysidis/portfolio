@@ -44,7 +44,6 @@ nav {
     align-items: center;
     @include container-hero-and-header();
     
-
     a:not(:first-child) {
         text-decoration: none;
         color: $font-color-white;

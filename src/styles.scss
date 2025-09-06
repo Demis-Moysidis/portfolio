@@ -15,6 +15,10 @@ $font-color-white: #F8F9FA;
     src: url('./../public/fonts/Monoton/Monoton-Regular.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Bricolage Grotesque';
 }
