@@ -1,0 +1,156 @@
+@use './../../../styles.scss' as *;
+
+@mixin link-decoration($img-link, $inset-bottom: 0, $inset-right: 100%){
+    &::after {
+        content: "";
+        display: inline-block;
+        background-image: url($img-link);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: -14px;
+        left: 0px;
+        clip-path: inset(0 100% 0 0);
+        transition: clip-path 300ms ease;
+    }
+
+    &.contact-de::after {
+        width: 215px;
+        height: 90px;
+        top: -43px;
+        left: -20px;
+    }
+
+    &:hover::after{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.fontColor-black {
+    * {
+        color: #0E1013;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    .logo {
+        color: #3355FF;
+
+        &:hover {
+            color: #F7C518;
+        }
+    }
+
+    >div:nth-of-type(2) {
+        >a:not(:first-of-type) {
+            &::after {
+                filter: invert(1);
+            }
+        }
+
+        >a:first-of-type {
+            font-weight: bold;
+        }
+    }
+}
+
+:host {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer {
+    @include container-section();
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.logo {
+    font-family: 'Monoton';
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 36px;
+    color: #3355FF;
+    transition: all 500ms ease;
+
+    &:hover {
+        color: #F7C518;
+    }
+}
+
+.legal-notice {
+    position: relative;
+    @include link-decoration($img-link: '/img/00_Hand-drawn lines/00_Header/Color option 1/3.png');
+}
+
+@mixin link-hover($img-link) {
+    padding: 8px 24px;
+    border-radius: 32px;
+    transition: all 400ms ease;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        clip-path: circle(0% at center 90%);
+        transition: all 400ms ease;
+        background-color: #3355FF;
+        border-radius: 32px;
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: 0;
+    }
+
+    &:hover:before {
+        clip-path: circle(100% at center 90%);;
+        opacity: 1;
+    }
+
+    &::after {
+        content: url($img-link);
+        position: absolute;
+        top: -35px;
+        right: 40px;
+        transition: all 400ms ease;
+        transform: rotate(180deg) ;
+        opacity: 0;
+    }
+
+    &:hover::after {
+        right: 0;
+        transform: rotate(360deg) ;
+        opacity: 1;
+    }
+}
+
+.github {
+    @include link-hover($img-link: '/icons/git-hub.svg');
+}
+
+.linkedin {
+    @include link-hover($img-link: '/icons/linkedIn.svg');
+}
+
+.email {
+    @include link-hover($img-link: '/icons/email.svg');
+}

@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<footer [ngClass]="{'fontColor-black': fontColorBlack}">
+    <div>
+        <a class="logo" routerLink="#hero">DM</a>
+        <p>&copy; Demis Moysidis 2025</p>
+    </div>
+    
+    <div class="links">
+        <a class="legal-notice" routerLink="/legal-notice">{{ 'footer.legal-notice' | translate }}</a>
+        <a href="https://github.com/Demis-Moysidis" target="_blank" class="github">GitHub</a>
+        <a href="https://www.linkedin.com/in/demis-moysidis-255608244/" target="_blank" class="linkedin">LinkedIn</a>
+        <a href="mailto:demis.moysidis@outlook.de" class="email">Email</a>
+    </div>
+</footer>

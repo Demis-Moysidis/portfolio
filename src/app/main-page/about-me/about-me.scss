@@ -106,11 +106,12 @@ section {
         justify-content: start;
         gap: 32px;
 
-        button {
+        .lets-talk {
             @include btnStyle($border: 2px solid #0E1013);
             @include btnShadow($color: #0E1013);
             align-self: flex-end;
             transition: all 125ms ease;
+            text-decoration: none;
 
             &:hover {
                 background-color: #F87A55;
