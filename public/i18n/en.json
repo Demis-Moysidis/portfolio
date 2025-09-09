@@ -97,21 +97,49 @@
     },
 
     "legal-notice": {
-        "title": "Legal notice",
+        "title": "Legal Notice",
         "imprint": "Imprint",
-        "exploring": "Exploring the Board",
-        "acceptance": "Acceptance of terms",
-        "acceptance-text": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
-        "scope": "Scope and ownership of the product",
-        "scope-text": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.\n\nThe design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
-        "proprietary": "Proprietary rights",
-        "proprietary-text": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all proprietary rights in Portfolio, including any associated copyrighted material, trademarks, and other proprietary information.",
-        "use-of": "Use of the product",
-        "use-of-text": "Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of Portfolio.",
-        "disclaimer": "Disclaimer of warranties and limitation of liability",
-        "disclaimer-text": "Portfolio is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio.",
+
+        "scope": "Scope",
+        "scope-text": "This portfolio was created as part of a student project in the Web Development Bootcamp at Developer Akademie GmbH. It is intended solely for educational and demonstration purposes and is not designed for permanent commercial use. No guarantee can be given regarding availability, accuracy, or completeness.",
+
+        "copyright": "Copyright",
+        "copyright-text": "The design of this website is the property of Developer Akademie GmbH and is protected by copyright law. Any unauthorized use, reproduction, modification, distribution, or imitation of the design is strictly prohibited. All other content (texts, images, layouts) is also subject to copyright. Use without explicit permission is not allowed.",
+
+        "use-of": "Terms of Use",
+        "use-of-text": "By accessing and using this portfolio, you acknowledge and agree to these terms. The portfolio may only be used for lawful purposes. Any misuse, in particular for illegal activities or to harass others, is strictly prohibited. The content is provided \"as is.\" We assume liability for damages resulting from the use of this portfolio only to the extent permitted by law.",
+
+        "disclaimer": "Disclaimer",
+        "disclaimer-text": "The contents of this portfolio are provided without any guarantee of accuracy, completeness, or timeliness. Any liability for damages resulting from the use of this portfolio is excluded to the extent permitted by law.",
+
         "indemnity": "Indemnity",
-        "indemnity-text": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice.\n\nFor any questions or notices, please contact me.\n\nDate: September 10, 2025"
+        "indemnity-text": "You agree to indemnify and hold harmless the listed students and Developer Akademie GmbH from any third-party claims arising from unlawful or improper use of this portfolio.\n\nFor any questions or notices, please contact me.\n\nDate: September 9, 2025"
+    },
+
+    "privacy-policy": {
+        "title": "Privacy policy",
+
+        "intro": "Introduction",
+        "intro-text": "The protection of your personal data is important to us. In this privacy policy, we inform you about which data we collect, how we use it, and what rights you have.",
+
+        "data-collection": "Collection and Processing of Data",
+        "data-collection-text": "When you use our contact form, we collect the data you provide (e.g., name, email address, message) to process your inquiry and respond to you.",
+
+        "purpose": "Purpose of Data Processing",
+        "purpose-text": "The data you provide is used solely to respond to your inquiry. Any further use, particularly for advertising purposes, does not take place.",
+
+        "store": "Data Retention",
+        "store-text": "We only store your data as long as it is necessary to process your inquiry. After processing, the data will be deleted unless legal retention requirements exist.",
+
+        "share": "Sharing with Third Parties",
+        "share-text": "Your personal data will only be shared with third parties if it is necessary to process your inquiry or if we are legally obligated to do so.",
+
+        "rights": "Your Rights",
+        "rights-text": "You have the right to request information at any time about the personal data we store about you. Additionally, you can request the correction, deletion, or restriction of the processing of your data.",
+
+        "contact": "Contact for Privacy Inquiries",
+        "contact-text": "If you have questions about the collection, processing, or use of your personal data, or if you want to request information, correction, blocking, or deletion of your data, please contact us via the contact form or by email at demis.moysidis@outlook.de."
     }
+    
 
 }

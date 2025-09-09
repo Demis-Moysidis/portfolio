@@ -93,24 +93,52 @@
     },
 
     "footer": {
-        "legal-notice": "Gesetzliche Hinweise"
+        "legal-notice": "Rechtliche Hinweise"
     },
 
     "legal-notice": {
-        "title": "Gesetzliche Hinweise",
+        "title": "Rechtliche Hinweise",
         "imprint": "Impressum",
-        "exploring": "Erforschung des Boards",
-        "acceptance": "Annahme der Bedingungen",
-        "acceptance-text": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Leitfäden oder Änderungen, die Ihnen von Zeit zu Zeit vorgelegt werden können, an und stimmen diesen zu. Wir, die aufgeführten Studierenden, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern.",
-        "scope": "Anwendungsbereich und Eigentum am Produkt",
-        "scope-text": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp bei der Developer Akademie GmbH entwickelt. Es hat einen Bildungszweck und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder irgendeinen anderen Aspekt der Qualität in Bezug auf dieses Produkt garantieren.\n\nDas Design von Portfolio ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt.",
-        "proprietary": "Eigentumsrechte",
-        "proprietary-text": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und anderer geschützter Informationen.",
-        "use-of": "Nutzung des Produkts",
-        "use-of-text": "Portfolio darf ausschließlich für rechtmäßige Zwecke verwendet werden, in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften. Jede Nutzung von Portfolio für illegale Aktivitäten oder um eine andere Person zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist strengstens untersagt. Sie sind allein für Ihre Interaktionen mit anderen Nutzer:innen von Portfolio verantwortlich.",
-        "disclaimer": "Haftungsausschluss und Beschränkung der Gewährleistung",
-        "disclaimer-text": "Portfolio wird \"wie besehen\" ohne jegliche Garantie bereitgestellt, sei es ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden oder die Developer Akademie für direkte, indirekte, zufällige, spezielle, Folgeschäden oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden aus entgangenem Gewinn, Goodwill, Nutzung, Daten oder anderen immateriellen Verlusten, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus oder im Zusammenhang mit der Nutzung oder Leistung von Portfolio ergeben.",
+
+        "scope": "Anwendungsbereich",
+        "scope-text": "Dieses Portfolio wurde im Rahmen eines studentischen Projekts im Webentwicklungs-Bootcamp bei der Developer Akademie GmbH erstellt. Es dient ausschließlich Bildungs- und Demonstrationszwecken und ist nicht für eine dauerhafte kommerzielle Nutzung vorgesehen. Es kann keine Gewähr für Verfügbarkeit, Richtigkeit oder Vollständigkeit übernommen werden.",
+
+        "copyright": "Urheberrecht",
+        "copyright-text": "Das Design dieser Website ist Eigentum der Developer Akademie GmbH und urheberrechtlich geschützt. Jede unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt. Alle weiteren Inhalte (Texte, Bilder, Layouts) unterliegen ebenfalls dem Urheberrecht. Eine Nutzung ohne ausdrückliche Genehmigung ist nicht gestattet.",
+
+        "use-of": "Nutzungsbedingungen",
+        "use-of-text": "Durch den Zugriff auf und die Nutzung dieses Portfolios erkennen Sie diese Bedingungen an. Das Portfolio darf nur für rechtmäßige Zwecke genutzt werden. Jede missbräuchliche Verwendung, insbesondere für illegale Aktivitäten oder zur Belästigung anderer, ist strengstens untersagt. Die Inhalte werden \"wie besehen\" bereitgestellt. Für Schäden, die durch die Nutzung dieses Portfolios entstehen, übernehmen wir nur im gesetzlich zulässigen Umfang Haftung.",
+
+        "disclaimer": "Haftungsausschluss",
+        "disclaimer-text": "Die Inhalte dieses Portfolios werden ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität bereitgestellt. Jegliche Haftung für Schäden, die aus der Nutzung entstehen, ist soweit gesetzlich zulässig ausgeschlossen.",
+
         "indemnity": "Freistellung",
-        "indemnity-text": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeitenden von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten), die sich aus Ihrer Nutzung von Portfolio und/oder Ihrem Verstoß gegen diesen rechtlichen Hinweis ergeben, schadlos zu halten und zu verteidigen.\n\nBei Fragen oder Mitteilungen kontaktieren Sie mich bitte.\n\nDatum: 10. September 2025"
+        "indemnity-text": "Sie erklären sich damit einverstanden, die genannten Studierenden sowie die Developer Akademie GmbH von allen Ansprüchen Dritter freizustellen, die sich aus einer rechtswidrigen oder unsachgemäßen Nutzung dieses Portfolios ergeben.\n\nBei Fragen oder Mitteilungen kontaktieren Sie mich bitte.\n\nDatum: 9. September 2025"
+    },
+
+    "privacy-policy": {
+        "title": "Datenschutzerklärung",
+
+        "intro": "Einleitung",
+        "intro-text": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. In dieser Datenschutzerklärung informieren wir Sie, welche Daten wir erheben, wie wir sie verwenden und welche Rechte Sie haben.",
+
+        "data-collection": "Erhebung und Verarbeitung von Daten",
+        "data-collection-text": "Wenn Sie unser Kontaktformular nutzen, erheben wir die von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht), um Ihre Anfrage zu bearbeiten und Ihnen antworten zu können.",
+
+        "purpose": "Zweck der Datenverarbeitung",
+        "purpose-text": "Die von Ihnen übermittelten Daten werden ausschließlich dazu verwendet, um Ihre Anfrage zu beantworten. Eine darüber hinausgehende Nutzung, insbesondere zu Werbezwecken, erfolgt nicht.",
+
+        "store": "Speicherdauer",
+        "store-text": "Wir speichern Ihre Daten nur so lange, wie es für die Bearbeitung Ihrer Anfrage erforderlich ist. Nach Abschluss der Bearbeitung werden die Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+
+        "share": "Weitergabe an Dritte",
+        "share-text": "Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, wenn dies zur Bearbeitung Ihrer Anfrage notwendig ist oder wir gesetzlich dazu verpflichtet sind.",
+
+        "rights": "Ihre Rechte",
+        "rights-text": "Sie haben das Recht, jederzeit Auskunft über die von uns gespeicherten personenbezogenen Daten zu erhalten. Außerdem können Sie die Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer Daten verlangen.",
+
+        "contact": "Kontakt für Datenschutzanfragen",
+        "contact-text": "Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten oder für Auskünfte, Berichtigung, Sperrung oder Löschung von Daten, wenden Sie sich bitte an uns über das Kontaktformular oder per E-Mail an demis.moysidis@outlook.de."
     }
+    
 }

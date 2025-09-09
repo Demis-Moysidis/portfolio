@@ -77,7 +77,7 @@
 
             <div class="privacy-policy">
                 <input type="checkbox" name="privacy-policy" id="privacy-policy" required #privacy_policy="ngModel" ngModel>
-                <p>{{'contact.privacy-policy.first' | translate}} <a href="">{{'contact.privacy-policy.link' | translate}}</a> {{'contact.privacy-policy.second' | translate}}</p>
+                <p>{{'contact.privacy-policy.first' | translate}} <a routerLink="/privacy-policy">{{'contact.privacy-policy.link' | translate}}</a> {{'contact.privacy-policy.second' | translate}}</p>
             </div>
 
             <p [ngClass]="{'invalid-email': form.submitted && email.errors?.['pattern']}" class="error-massage">{{'contact.invalid-email' | translate}}</p>

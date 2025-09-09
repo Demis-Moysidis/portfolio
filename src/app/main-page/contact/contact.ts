@@ -2,12 +2,12 @@ import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-
 
 @Component({
   selector: 'app-contact',
-  imports: [TranslatePipe, FormsModule, NgClass],
+  imports: [TranslatePipe, FormsModule, NgClass, RouterLink],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

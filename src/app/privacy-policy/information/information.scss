@@ -1,0 +1,22 @@
+@use './../../../styles.scss' as *;
+
+* {
+    color: #0E1013;
+}
+
+section {
+    @include container-section();
+    padding-top: 50px;
+    padding-bottom: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h3 {
+    color: #3355FF;
+}
+
+p {
+    white-space: pre-line;
+}

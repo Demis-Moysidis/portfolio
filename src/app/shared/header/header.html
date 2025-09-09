@@ -1,10 +1,10 @@
 <nav>
-    <a class="logo" href="#">DM</a>
+    <a class="logo" routerLink="/">DM</a>
     
-    <a class="about-me" href="#about-me">{{ 'header.about-me' | translate }}</a>
-    <a class="skills" href="#skills" [ngClass]="currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
-    <a class="projects" href="#projects">{{ 'header.projects' | translate }}</a>
-    <a class="contact" href="#contact">{{ 'header.contact' | translate }}</a>  
+    <a class="about-me" routerLink='/' fragment="about-me">{{ 'header.about-me' | translate }}</a>
+    <a class="skills" routerLink='/' fragment="skills" [ngClass]="currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+    <a class="projects" routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
+    <a class="contact" routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
 
     <div class="language-toggle">
         <p (click)="toggleLanguage('en')" [ngClass]="currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>
@@ -14,4 +14,4 @@
         </div>
         <p (click)="toggleLanguage('de')" [ngClass]="currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
     </div>
-</nav> 
+</nav>
