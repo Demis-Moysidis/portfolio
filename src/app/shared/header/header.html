@@ -2,16 +2,16 @@
     <a class="logo" routerLink="/">DM</a>
     
     <a class="about-me" routerLink='/' fragment="about-me">{{ 'header.about-me' | translate }}</a>
-    <a class="skills" routerLink='/' fragment="skills" [ngClass]="currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+    <a class="skills" routerLink='/' fragment="skills" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
     <a class="projects" routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
     <a class="contact" routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
 
     <div class="language-toggle">
-        <p (click)="toggleLanguage('en')" [ngClass]="currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>
+        <p (click)="toggleLanguage('en')" [ngClass]="language.currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>
         <div class="toggle-btn">
             <div></div>
-            <div [ngClass]="currentLanguage == 'en' ? 'en' : 'de' "></div>
+            <div [ngClass]="language.currentLanguage == 'en' ? 'en' : 'de' "></div>
         </div>
-        <p (click)="toggleLanguage('de')" [ngClass]="currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
+        <p (click)="toggleLanguage('de')" [ngClass]="language.currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
     </div>
 </nav>
