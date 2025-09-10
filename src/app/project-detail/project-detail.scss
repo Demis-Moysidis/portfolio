@@ -1,0 +1,240 @@
+@use './../../styles.scss' as *;
+
+@keyframes underline {
+    0% { clip-path: inset(0 100% 0 0)}
+    10% { clip-path: inset(0 0 0 0)}
+    20% { clip-path: inset(0 0 0 0)}
+    30% { clip-path: inset(0 0 0 0)}
+    40% { clip-path: inset(0 0 0 0)}
+    50% { clip-path: inset(0 0 0 0)}
+    60% { clip-path: inset(0 0 0 0)}
+    70% { clip-path: inset(0 0 0 0)}
+    80% { clip-path: inset(0 0 0 0)}
+    90% { clip-path: inset(0 100%  0 0)}
+    100% { clip-path: inset(0 100% 0 0)}
+}
+
+:host {
+    display: block;
+    height: fit-content;
+    min-height: 100vh;
+    background: url('/img/01_Background/Design Size Relation@3x/Note book paper.png') no-repeat calc(50% + 100px) / calc(100% + 200px) 100%, linear-gradient(#1d1d1d);
+    
+}
+
+section {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    @include container-section();
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    >div{
+        display: flex;
+        gap: 32px;
+
+        >div {
+            flex: 1;
+        }   
+    }
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    h2, h3, p, span {
+        color: #0E1013;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        position: relative;
+        width: fit-content;
+
+        &::before {
+            content: "";
+            background-image: url('/img/00_Hand-drawn lines/01_About me/Color option 1.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            animation: underline 6s infinite;
+        }
+    }
+
+    h3 {
+        margin-bottom: 12px;
+    }
+
+    >p {
+        font-weight: bold;
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:34px;
+    position: relative;
+
+    >img {
+        width: 100%;
+        border-radius: 32px;
+    }
+
+    >div {
+        align-self: flex-end;
+        display: flex;
+        gap: 32px;
+
+        a {
+            @include btnStyle();
+            @include btnShadow();
+            text-decoration: none;
+            transition: all 125ms ease;
+
+            &:hover {
+                background-color: #F87A55;
+                transform: translateX(3px) translateY(3px);
+                @include btnShadow($x: 0, $y: 0);
+            }
+        }
+    }
+
+
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    >div {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    };
+
+    img {
+        width: 25px;
+    };
+}
+
+@mixin switch-btn($flex-position, $color, $img-url, $hover-color, $left: none, $right: none){
+    background: none;
+    border: none;
+    color: $color;
+    cursor: pointer;
+    align-self: $flex-position;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 125ms ease;
+    position: relative;
+    padding: 0;
+    margin-left: -15px;
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &::before {
+        content: '';
+        background: url($img-url) no-repeat center/contain;
+        position: absolute;
+        top: -4px;
+        right: $right;
+        left: $left;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.go-back {
+    @include switch-btn($flex-position: flex-start, $color: #0E1013, $img-url: '/img/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png', $hover-color: #F87A55, $left: -35px);
+}
+
+.next-project {
+    @include switch-btn($flex-position: flex-end, $color: $font-color-white, $img-url: '/img/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png', $hover-color: #F7C518, $right: -35px);
+}
+
+@mixin svg-text($top, $left, $font-weigth, $letter-spacing, $font-size, $fill-color){
+    position: absolute;
+    top: $top;
+    left: $left;
+    overflow: visible;
+    width: 100px;
+    height: 60px;
+
+    path {
+        fill: none;
+    }
+
+    text {
+        font-size: $font-size;
+        font-weight: $font-weigth;
+        letter-spacing: $letter-spacing;
+        fill: $fill-color;
+    }
+}
+
+.sticker-round {
+    position: absolute;
+    top: 35%;
+    right: -70px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: -20px;
+    transform: rotate(8deg);
+    cursor: default;
+
+    .logo {
+        font-family: 'Monoton';
+        font-weight: 400;
+        font-size: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    >img {
+        width: 100%;
+        height: 100%;
+    }
+
+    >svg:first-of-type {
+        @include svg-text($top: 2px, $left: 25px, $font-weigth: bold, $letter-spacing: 0px, $font-size: 16px, $fill-color: $font-color-white);
+    }
+
+    >svg:nth-of-type(2) {
+        @include svg-text($top: -10px, $left: 15px, $font-weigth: bold, $letter-spacing: 1px, $font-size: 16px, $fill-color: $font-color-white);
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.black {
+    * {
+        color: #0E1013;
+        fill: #0E1013
+    }
+}

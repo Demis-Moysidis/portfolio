@@ -47,8 +47,7 @@
         overflow: hidden;
         cursor: pointer;
         position: relative;
-        // height: 375px;
-
+        
         &:hover {
             >img:first-of-type {
                 transform: scale(1.1);   
@@ -186,7 +185,7 @@ section {
 
         >div {
             position: absolute;
-            top: 40%;
+            bottom: 10px;
             left: 0px;
             width: 150px;
             height: 150px;

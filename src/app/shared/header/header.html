@@ -1,8 +1,8 @@
 <nav>
     <a class="logo" routerLink="/">DM</a>
     
-    <a class="about-me" routerLink='/' fragment="about-me">{{ 'header.about-me' | translate }}</a>
-    <a class="skills" routerLink='/' fragment="skills" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+    <a class="about-me" routerLink='/' fragment="about-me" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}">{{ 'header.about-me' | translate }}</a>
+    <a class="skills" routerLink='/' fragment="skills" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
     <a class="projects" routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
     <a class="contact" routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
 

@@ -12,7 +12,7 @@
         <div floaty="true" class="second-content">
             <div>
                 <img src="./img/04_Projects/Laptop.png" alt="">
-                <button>{{'projects.details' | translate}}</button>
+                <button [routerLink]="['/project', '1']">{{'projects.details' | translate}}</button>
                 <div>
                     <img src="./img/03_Stickers/00_Round/08_ Color option 3 - C.png" alt="">
                     
@@ -47,7 +47,7 @@
         <div class="third-content">
             <div>
                 <img src="./img/04_Projects/Pollo.png" alt="">
-                <button>{{'projects.details' | translate}}</button>
+                <button [routerLink]="['/project', '2']">{{'projects.details' | translate}}</button>
             </div>
             <p>El Pollo Loco</p>
             <p>{{'projects.el-pollo-loco' | translate}}</p>
@@ -56,7 +56,7 @@
         <div class="fourth-content">
             <div>
                 <img src="./img/04_Projects/pokedex.png" alt="">
-                <button>{{'projects.details' | translate}}</button>
+                <button [routerLink]="['/project', '3']">{{'projects.details' | translate}}</button>
             </div>
             <p>Pokédex</p>
             <p>{{'projects.pokedex' | translate}}</p>

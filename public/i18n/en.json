@@ -138,8 +138,40 @@
         "rights-text": "You have the right to request information at any time about the personal data we store about you. Additionally, you can request the correction, deletion, or restriction of the processing of your data.",
 
         "contact": "Contact for Privacy Inquiries",
-        "contact-text": "If you have questions about the collection, processing, or use of your personal data, or if you want to request information, correction, blocking, or deletion of your data, please contact us via the contact form or by email at demis.moysidis@outlook.de."
+        "contact-text": "If you have questions about the collection, processing, or use of your personal data, or if you want to request information, correction, blocking, or deletion of your data, please contact me via the contact form or by email at demis.moysidis@outlook.de."
+    },
+
+    "project": {
+        "description": "Description",
+        "implementation": "Implementation Details",
+        "next-project": "Next Project",
+        "go-back": "Go Back",
+        "duration": "Duration",
+        
+        "join": {
+            "title": "Join",
+            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+            "implementation": "As part of a team, I developed a task manager in the Kanban style using Angular, TypeScript, and Firebase. I implemented the drag-and-drop functionality, user management, and structured task organization. This project demonstrates my ability to work efficiently both independently and as part of a team.",
+            "duration": "5 weeks",
+            "round-text-top": "In Progress",
+            "round-text-bottom": "Check all details"
+        },
+        "epl": {
+            "title": "El Pollo Loco",
+            "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+            "implementation": "I developed a jump-and-run game with throwing mechanics based on an object-oriented approach. I implemented the game logic in JavaScript, created animations, and designed the responsive layout using HTML and CSS. This project highlights my ability to develop complex logic and apply it creatively.",
+            "duration": "3 weeks",
+            "round-text-top": "Demis Moysidis",
+            "round-text-bottom": "Frontend Developer"
+        },
+        "pokedex": {
+            "title": "Pokédex",
+            "description": "This app is a Pokédex - a digital encyclopedia from the Pokémon universe that provides detailed information about different Pokémon, including their abilities, types, and evolutions.",
+            "implementation": "I developed a Pokédex app that provides detailed information about different Pokémon, including their abilities, types, and evolutions. I used an external Pokémon API to fetch data dynamically. The data was processed using JavaScript, and the presentation was built with HTML and CSS. This project demonstrates my ability to structure API data effectively and design user-friendly interfaces.",
+            "duration": "2 weeks",
+            "round-text-top": "Demis Moysidis",
+            "round-text-bottom": "Frontend Developer"
+        }
     }
     
-
 }

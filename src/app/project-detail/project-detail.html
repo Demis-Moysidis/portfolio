@@ -1,0 +1,68 @@
+<app-header [headerForProjectDetail]="true"></app-header>
+<section>
+    <button class="go-back" [routerLink]="['/']" fragment="projects">{{'project.go-back' | translate}}</button>
+    
+    <div>
+        <div class="left-content">
+            <h2>{{projectData?.title | translate}}</h2>
+            
+            <div>
+                <h3>{{'project.description' | translate}}</h3>
+                <p>{{projectData?.description | translate}}</p>
+            </div>
+            
+            <div>
+                <h3>{{'project.implementation' | translate}}</h3>
+                <p>{{projectData?.implementation | translate}}</p>
+            </div>
+            
+            <p>{{'project.duration' | translate}}: <span>{{projectData?.duration | translate}}</span></p>
+            
+            <div class="technologies">
+                @for (technology of projectData?.technologies; track $index) {
+                    <div>
+                        <img src={{technology.img}} alt="">
+                        <p>{{technology.name}}</p> 
+                    </div>
+                }
+            </div>
+        </div >
+
+        <div class="right-content">
+            <div class="sticker-round" [ngClass]="{'black': projectData?.round_black}">
+                <img src={{projectData?.round_img}} alt="">
+                
+                <p class="logo">DM</p>
+
+                <svg >
+                    <path id="semicircle-top" d="M 0 75 A 50 50 0 0 1 100 75"/>
+                    <text text-anchor="middle" [ngStyle]="projectData?.in_progress ? {'font-size': '20px'} : {}">
+                        <textPath href="#semicircle-top" startOffset="50%">
+                            {{projectData?.round_text_top | translate}}
+                        </textPath>
+                    </text>
+                </svg>
+
+                <svg >
+                    <path id="semicircle-bottom" d="M 0 85 A 60 60 0 0 0 120 85"/>
+                    <text text-anchor="middle">
+                        <textPath href="#semicircle-bottom" startOffset="50%">
+                            {{projectData?.round_text_bottom| translate}}
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            
+            <img src={{projectData?.img}} alt="">
+
+            <div>
+                <a href="" [ngClass]="{'disabled': !projectData?.github}">GitHub</a>
+                <a href="" [ngClass]="{'disabled': !projectData?.live_test}">Live Test</a>
+            </div>   
+        </div> 
+    </div>
+
+
+    <button class="next-project" (click)="nextProject()">{{'project.next-project' | translate}}</button>
+</section>
+

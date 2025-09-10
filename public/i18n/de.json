@@ -138,7 +138,40 @@
         "rights-text": "Sie haben das Recht, jederzeit Auskunft über die von uns gespeicherten personenbezogenen Daten zu erhalten. Außerdem können Sie die Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer Daten verlangen.",
 
         "contact": "Kontakt für Datenschutzanfragen",
-        "contact-text": "Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten oder für Auskünfte, Berichtigung, Sperrung oder Löschung von Daten, wenden Sie sich bitte an uns über das Kontaktformular oder per E-Mail an demis.moysidis@outlook.de."
+        "contact-text": "Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten oder für Auskünfte, Berichtigung, Sperrung oder Löschung von Daten, wenden Sie sich bitte an mich über das Kontaktformular oder per E-Mail an demis.moysidis@outlook.de."
+    },
+
+    "project": {
+        "description": "Beschreibung",
+        "implementation": "Umsetzungsdetails",
+        "next-project": "Nächstes Projekt",
+        "go-back": "Zurück",
+        "duration": "Dauer",
+
+        "join": {
+            "title": "Join",
+            "description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+            "implementation": "Im Team habe ich einen Task Manager im Kanban-Stil mit Angular, TypeScript und Firebase entwickelt. Dabei habe ich die Drag-and-Drop-Funktionalität, die Benutzerverwaltung und die strukturierte Organisation der Aufgaben umgesetzt. Das Projekt zeigt meine Fähigkeit, sowohl eigenständig als auch im Team effizient zu arbeiten.",
+            "duration": "5 Wochen",
+            "round-text-top": "In Arbeit",
+            "round-text-bottom": "Alle Details ansehen"
+        },
+        "epl": {
+            "title": "El Pollo Loco",
+            "description": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
+            "implementation": "Ich habe ein Jump-and-Run-Spiel mit Wurfmechanik basierend auf einem objektorientierten Ansatz entwickelt. Ich habe die Spiellogik in JavaScript umgesetzt, Animationen erstellt und das responsive Layout mit HTML und CSS gestaltet. Das Projekt zeigt meine Fähigkeit, komplexe Logik selbstständig zu entwickeln und kreativ umzusetzen.",
+            "duration": "3 Wochen",
+            "round-text-top": "Demis Moysidis",
+            "round-text-bottom": "Frontend Entwickler"
+        },
+        "pokedex": {
+            "title": "Pokédex",
+            "description": "Diese App ist ein Pokédex - eine digitale Enzyklopädie aus dem Pokémon-Universum, die detaillierte Informationen über verschiedene Pokémon liefert, einschließlich ihrer Fähigkeiten, Typen und Entwicklungen.",
+            "implementation": "Ich habe eine Pokédex-App entwickelt, die detaillierte Informationen zu verschiedenen Pokémon bereitstellt, einschließlich ihrer Fähigkeiten, Typen und Entwicklungen. Dabei habe ich eine externe Pokémon-API genutzt, um die Daten dynamisch abzurufen. Die Daten wurden mit JavaScript verarbeitet, die Darstellung mit HTML und CSS umgesetzt. Das Projekt zeigt meine Fähigkeit, Daten aus APIs strukturiert darzustellen und benutzerfreundliche Interfaces zu gestalten.",
+            "duration": "2 Wochen",
+            "round-text-top": "Demis Moysidis",
+            "round-text-bottom": "Frontend Entwickler"
+        }   
     }
     
 }

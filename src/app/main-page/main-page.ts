@@ -6,10 +6,11 @@ import { Projects } from "./projects/projects";
 import { ColleaguesThoughts } from "./colleagues-thoughts/colleagues-thoughts";
 import { Contact } from "./contact/contact";
 import { Footer } from "../shared/footer/footer";
+import { Header } from '../shared/header/header';
 
 @Component({
   selector: 'app-main-page',
-  imports: [Hero, AboutMe, Skills, Projects, ColleaguesThoughts, Contact, Footer],
+  imports: [Hero, AboutMe, Skills, Projects, ColleaguesThoughts, Contact, Footer, Header],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss'
 })
