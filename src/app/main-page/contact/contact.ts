@@ -21,10 +21,10 @@ export class Contact {
 
   http = inject(HttpClient);
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://demis-moysidis.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
