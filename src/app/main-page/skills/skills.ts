@@ -24,43 +24,43 @@ export class Skills {
   skills = [
     {
       name: 'HTML',
-      url: './icons/skills/HTML.svg'
+      url: './icon/skills/HTML.svg'
     },
     {
       name: 'CSS',
-      url: './icons/skills/CSS.svg'
+      url: './icon/skills/CSS.svg'
     },
     {
       name: 'JavaScript',
-      url: './icons/skills/Js.svg'
+      url: './icon/skills/Js.svg'
     },
     {
       name: 'TypeScript',
-      url: './icons/skills/Ts.svg'
+      url: './icon/skills/Ts.svg'
     },
     {
       name: 'Angular',
-      url: './icons/skills/Angular.svg'
+      url: './icon/skills/Angular.svg'
     },
         {
       name: 'Firebase',
-      url: './icons/skills/Firebase.svg'
+      url: './icon/skills/Firebase.svg'
     },
     {
       name: 'Git',
-      url: './icons/skills/Git.svg'
+      url: './icon/skills/Git.svg'
     },
     {
       name: 'REST-API',
-      url: './icons/skills/Rest-Api.svg'
+      url: './icon/skills/Rest-Api.svg'
     },
     {
       name: 'Scrum',
-      url: './icons/skills/Scrum.svg'
+      url: './icon/skills/Scrum.svg'
     },
     {
       name: 'Material\nDesign',
-      url: './icons/skills/Material-Design.svg'
+      url: './icon/skills/Material-Design.svg'
     }
   ]
 }

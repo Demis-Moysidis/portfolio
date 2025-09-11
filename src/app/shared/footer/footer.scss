@@ -144,13 +144,13 @@ footer {
 }
 
 .github {
-    @include link-hover($img-link: '/icons/git-hub.svg');
+    @include link-hover($img-link: '/icon/git-hub.svg');
 }
 
 .linkedin {
-    @include link-hover($img-link: '/icons/linkedIn.svg');
+    @include link-hover($img-link: '/icon/linkedIn.svg');
 }
 
 .email {
-    @include link-hover($img-link: '/icons/email.svg');
+    @include link-hover($img-link: '/icon/email.svg');
 }

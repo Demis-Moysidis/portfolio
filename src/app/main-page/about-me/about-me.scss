@@ -82,15 +82,15 @@ section {
         };
 
         >div:nth-of-type(1) {
-            @include about-me-card-content($icon-url: '/icons/location.svg', $attr-name: based-in, $top: 40%, $height: 180px, $rotate: rotate(-3deg), $z-index: 10);
+            @include about-me-card-content($icon-url: '/icon/location.svg', $attr-name: based-in, $top: 40%, $height: 180px, $rotate: rotate(-3deg), $z-index: 10);
         }
 
         >div:nth-of-type(2) {
-            @include about-me-card-content($icon-url: '/icons/relocation.svg', $attr-name: relocate, $top: 45%, $height: 150px, $rotate: rotate(0deg), $z-index: 5);
+            @include about-me-card-content($icon-url: '/icon/relocation.svg', $attr-name: relocate, $top: 45%, $height: 150px, $rotate: rotate(0deg), $z-index: 5);
         }
 
         >div:nth-of-type(3) {
-            @include about-me-card-content($icon-url: '/icons/remote.svg', $attr-name: remote, $top: 45%, $height: 180px, $rotate: rotate(3deg), $z-index: auto);
+            @include about-me-card-content($icon-url: '/icon/remote.svg', $attr-name: remote, $top: 45%, $height: 180px, $rotate: rotate(3deg), $z-index: auto);
         }
         
         >div:not(:first-of-type) {

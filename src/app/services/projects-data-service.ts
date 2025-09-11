@@ -14,23 +14,23 @@ export class ProjectsDataService {
       duration: 'project.join.duration',
       technologies: [
         {
-          img: './icons/skills/CSS.svg',
+          img: './icon/skills/CSS.svg',
           name: 'CSS'
         },
         {
-          img: './icons/skills/HTML.svg',
+          img: './icon/skills/HTML.svg',
           name: 'HTML'
         },
         {
-          img: './icons/skills/Firebase.svg',
+          img: './icon/skills/Firebase.svg',
           name: 'Firebase'
         },
         {
-          img: './icons/skills/Angular.svg',
+          img: './icon/skills/Angular.svg',
           name: 'Angular'
         },
         {
-          img: './icons/skills/Ts.svg',
+          img: './icon/skills/Ts.svg',
           name: 'TypeScript'
         }
     ],
@@ -50,15 +50,15 @@ export class ProjectsDataService {
       duration: 'project.epl.duration',
       technologies: [
         {
-          img: './icons/skills/Js.svg',
+          img: './icon/skills/Js.svg',
           name: 'JavaScript'
         },
         {
-          img: './icons/skills/HTML.svg',
+          img: './icon/skills/HTML.svg',
           name: 'HTML'
         },
         {
-          img: './icons/skills/CSS.svg',
+          img: './icon/skills/CSS.svg',
           name: 'CSS'
         }
     ],
@@ -78,15 +78,15 @@ export class ProjectsDataService {
       duration: 'project.pokedex.duration',
       technologies: [
         {
-          img: './icons/skills/Js.svg',
+          img: './icon/skills/Js.svg',
           name: 'JavaScript'
         },
         {
-          img: './icons/skills/HTML.svg',
+          img: './icon/skills/HTML.svg',
           name: 'HTML'
         },
         {
-          img: './icons/skills/CSS.svg',
+          img: './icon/skills/CSS.svg',
           name: 'CSS'
         }
     ],
