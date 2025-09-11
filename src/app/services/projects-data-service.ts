@@ -68,7 +68,9 @@ export class ProjectsDataService {
       round_text_bottom: 'project.epl.round-text-bottom',
       github: true,
       live_test: true,
-      round_black: true
+      round_black: true,
+      github_link: 'https://github.com/Demis-Moysidis/el_pollo_loco',
+      live_test_link: 'https://el-pollo-loco.demis-moysidis.com'
     },
     {
       id: 3,
@@ -96,7 +98,9 @@ export class ProjectsDataService {
       round_text_bottom: 'project.pokedex.round-text-bottom',
       github: true,
       live_test: true,
-      round_black: true
+      round_black: true,
+      github_link: 'https://github.com/Demis-Moysidis/pokedex',
+      live_test_link: 'https://pokedex.demis-moysidis.com'
     }
   ]
 

@@ -56,8 +56,8 @@
             <img src={{projectData?.img}} alt="">
 
             <div>
-                <a href="" [ngClass]="{'disabled': !projectData?.github}">GitHub</a>
-                <a href="" [ngClass]="{'disabled': !projectData?.live_test}">Live Test</a>
+                <a href={{projectData?.github_link}} target="_blank" [ngClass]="{'disabled': !projectData?.github}">GitHub</a>
+                <a href={{projectData?.live_test_link}} target="_blank" [ngClass]="{'disabled': !projectData?.live_test}">Live Test</a>
             </div>   
         </div> 
     </div>

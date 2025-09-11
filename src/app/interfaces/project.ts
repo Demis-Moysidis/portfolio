@@ -15,5 +15,7 @@ export interface Project {
     github: boolean,
     live_test: boolean,
     round_black?: boolean,
-    in_progress?: boolean
+    in_progress?: boolean,
+    github_link?: string,
+    live_test_link?: string
 }
