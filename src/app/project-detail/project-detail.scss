@@ -137,7 +137,8 @@ section {
     };
 }
 
-@mixin switch-btn($color, $img-url, $hover-color, $left-img: none, $right-img: none, $top: none, $bottom: none, $left: none, $right: none){
+@mixin switch-btn($color, $img-url, $hover-color, $left-img: auto, $right-img: auto, $top: auto, $bottom: auto, $left: auto, $right: auto){
+    font-family: "Bricolage Grotesque";
     background: none;
     border: none;
     color: $color;
