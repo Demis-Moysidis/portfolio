@@ -80,7 +80,11 @@
                 <p>{{'contact.privacy-policy.first' | translate}} <a routerLink="/privacy-policy">{{'contact.privacy-policy.link' | translate}}</a> {{'contact.privacy-policy.second' | translate}}</p>
             </div>
 
-            <p [ngClass]="{'invalid-email': form.submitted && email.errors?.['pattern']}" class="error-massage">{{'contact.invalid-email' | translate}}</p>
+            @if(sendValidMessage){
+                <p class="valid-send">{{'contact.valid-send' | translate}}</p>
+            }@else {
+                <p [ngClass]="{'invalid-email': form.submitted && email.errors?.['pattern']}" class="error-massage">{{'contact.invalid-email' | translate}}</p>
+            }
 
             <button class="send-form-btn" type="submit" [disabled]="privacy_policy.invalid">{{'contact.send' | translate}}</button>
         </form>

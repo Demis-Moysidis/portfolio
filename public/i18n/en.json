@@ -68,6 +68,7 @@
         "title": "Ready to work together?",
         "description": "I'd love to connect with you and explore opportunities where I can contribute my skills and energy. I'm especially interested in roles where I can take part in building and improving impactful projects. \n\nIf you're looking for someone who can bring fresh ideas, dedication, and adaptability to your next project, I'd be excited to contribute.",
         "developer": "Frontend Developer",
+        "valid-send": "Your message has been sent successfully.",
         "input-name": {
             "title": "What's your name?",
             "placeholder": "Your name goes here",
@@ -147,6 +148,7 @@
         "next-project": "Next Project",
         "go-back": "Go Back",
         "duration": "Duration",
+        "live-test": "Live Test",
         
         "join": {
             "title": "Join",

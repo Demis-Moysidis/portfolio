@@ -22,6 +22,14 @@ export class Contact {
   http = inject(HttpClient);
 
   mailTest = false;
+  sendValidMessage = false;
+
+  validMessageWasSend(){
+    this.sendValidMessage = true;
+    setTimeout(()=>{
+      this.sendValidMessage = false;
+    }, 8000)
+  }
 
   post = {
     endPoint: 'https://demis-moysidis.com/sendMail.php',
@@ -40,6 +48,7 @@ export class Contact {
         .subscribe({
           next: (response) => {
 
+            this.validMessageWasSend();
             ngForm.resetForm();
           },
           error: (error) => {

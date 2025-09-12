@@ -68,6 +68,7 @@
         "title": "Bereit für eine Zusammenarbeit?",
         "description": "Ich würde mich freuen, mit dir in Kontakt zu treten und Möglichkeiten zu entdecken, bei denen ich meine Fähigkeiten und Energie einbringen kann. Besonders interessiert bin ich an Rollen, in denen ich an der Entwicklung und Verbesserung wirkungsvoller Projekte mitarbeiten kann. \n\nWenn du jemanden suchst, der frische Ideen, Engagement und Anpassungsfähigkeit in dein nächstes Projekt einbringt, würde ich mich sehr freuen, meinen Beitrag zu leisten.",
         "developer": "Frontend Entwickler",
+        "valid-send": "Ihre Nachricht wurde erfolgreich versendet.",
         "input-name": {
             "title": "Wie heißt du?",
             "placeholder": "Dein Name kommt hierhin",
@@ -147,6 +148,7 @@
         "next-project": "Nächstes Projekt",
         "go-back": "Zurück",
         "duration": "Dauer",
+        "live-test": "Live testen",
 
         "join": {
             "title": "Join",
