@@ -35,7 +35,7 @@ export class ProjectsDataService {
         }
     ],
       img: './img/04_Projects/join.jpg',
-      round_img: './img/03_Stickers/00_Round/08_ Color option 3 - C.png',
+      round_img: './img/03_Stickers/00_Round/08_ Color option 3 - C_new.png',
       round_text_top: 'project.join.round-text-top',
       round_text_bottom: 'project.join.round-text-bottom',
       github: false,
@@ -63,7 +63,7 @@ export class ProjectsDataService {
         }
     ],
       img: './img/04_Projects/Pollo.png',
-      round_img: './img/03_Stickers/00_Round/05_ Color option 2 - C.png',
+      round_img: './img/03_Stickers/00_Round/05_ Color option 2 - C_new.png',
       round_text_top: 'project.epl.round-text-top',
       round_text_bottom: 'project.epl.round-text-bottom',
       github: true,
@@ -93,7 +93,7 @@ export class ProjectsDataService {
         }
     ],
       img: './img/04_Projects/pokedex.png',
-      round_img: './img/03_Stickers/00_Round/05_ Color option 2 - C.png',
+      round_img: './img/03_Stickers/00_Round/05_ Color option 2 - C_new.png',
       round_text_top: 'project.pokedex.round-text-top',
       round_text_bottom: 'project.pokedex.round-text-bottom',
       github: true,

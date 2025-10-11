@@ -126,11 +126,11 @@ section {
 }
 
 .first-card {
-    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A.png', $rotate: -5deg, $z-index: 15);
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A_new.png', $rotate: -5deg, $z-index: 15);
 }
 
 .second-card {
-    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/B.png', $rotate: 0deg, $z-index: 10);
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/B_new.png', $rotate: 0deg, $z-index: 10);
 
     position: relative;
     top: 30px;
@@ -139,5 +139,5 @@ section {
 }
 
 .third-card {
-    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A.png', $rotate: 5deg, $z-index: 5);
+    @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A_new.png', $rotate: 5deg, $z-index: 5);
 }
