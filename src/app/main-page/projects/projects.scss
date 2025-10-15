@@ -50,11 +50,19 @@
         
         &:hover {
             >img:first-of-type {
-                transform: scale(1.1);   
+                transform: scale(1.1);
+
+                @media (max-width: 1000px) {
+                    transform: none;
+                }
             }
 
             button {
                 opacity: 1;
+
+                @media (max-width: 1000px) {
+                    opacity: 0;
+                }
             }
         }
 
@@ -109,7 +117,6 @@
                 animation: floaty 5s ease infinite;  
             }
         }
-
 
         >div {
             &:hover {
@@ -179,7 +186,6 @@ section {
 .second-content {
     @include single-project-content();
     
-
     >div {
         padding: 16px 0px;
 
@@ -253,6 +259,10 @@ h2 {
     }
 }
 
+.project-button {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     section {
         @include container-section-mobile();
@@ -272,6 +282,7 @@ h2 {
 
         >div {
             flex-direction: column;
+            gap: 80px;
         }
     }
 
@@ -294,6 +305,25 @@ h2 {
             align-self: center;
             max-width: 500px;
         }
+
+        >div:first-of-type {
+            >img{
+                transform: none;
+            }
+        }
+    }
+
+    .project-button {
+        display: block;
+        opacity: 1 !important;
+        box-shadow: 2px 4px 0px 0px #0E1013 !important;
+        color: #0E1013 !important;
+        border-color: #0E1013 !important;
+        bottom: -10px !important;
+        width: fit-content;
+        align-self: flex-end;
+        @include btnStyle();
+        @include btnShadow();
     }
 }
 
