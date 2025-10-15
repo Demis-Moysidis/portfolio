@@ -252,3 +252,53 @@ h2 {
         animation: underline 6s infinite; 
     }
 }
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile();
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p:not(.logo) {
+            font-size: 18px !important;
+        }
+
+        >div {
+            flex-direction: column;
+        }
+    }
+
+    .second-content {
+        >div {
+            align-self: center;
+            max-width: 500px;
+        }
+    }
+
+    .third-content {
+        >div {
+            align-self: center;
+            max-width: 500px;
+        }
+    }
+
+    .fourth-content {
+        >div {
+            align-self: center;
+            max-width: 500px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .in-progress {
+        display: none;
+    }
+}

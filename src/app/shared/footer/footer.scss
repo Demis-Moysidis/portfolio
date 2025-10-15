@@ -154,3 +154,35 @@ footer {
 .email {
     @include link-hover($img-link: '/icon/email.svg');
 }
+
+@media (max-width: 1200px) {
+    footer {
+        @include container-section-mobile();
+        position: relative;
+        gap: 60px;
+
+        >div:first-of-type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .legal-notice {
+            position: absolute;
+            right: 20px;
+            top: 55px;
+        }
+    }
+
+    .github {
+        padding: 8px 8px;
+    }
+
+    .linkedin {
+        padding: 8px 8px;    
+    }
+
+    .email {
+        padding: 8px 8px;    
+    }
+}

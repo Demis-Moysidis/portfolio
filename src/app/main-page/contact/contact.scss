@@ -183,6 +183,7 @@ section {
     
     h2 {
         line-height: 1;
+        hyphens: auto;
     }
 
     p {
@@ -256,5 +257,42 @@ section {
 
     >svg:nth-of-type(2) {
         @include svg-text($top: -10px, $left: 15px, $font-weigth: bold, $letter-spacing: 1px, $font-size: 16px);
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile();
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        flex-direction: column;
+        position: relative;
+        gap: 80px;
+        padding-bottom: 250px;
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p:not(.logo), label, input {
+            font-size: 18px !important;
+        }
+    }
+
+    .sticker-round {
+        position: absolute;
+        right: 20px;
+        left: auto;
+        top: -20px;
+    }
+
+    .yellow-arrow {
+        position: absolute;
+        bottom: 257px;
+        left: 25px;
+        width: 120px !important;
     }
 }

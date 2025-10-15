@@ -64,3 +64,9 @@ h3 {
     padding-left: 120px;
     padding-right: 120px;
 };
+
+
+@mixin container-section-mobile(){
+    padding-left: 20px;
+    padding-right: 20px;
+};

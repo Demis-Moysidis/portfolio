@@ -193,3 +193,49 @@ section {
         }
     }
 }
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile();
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+
+        h2 {
+            width: fit-content;
+            align-self: flex-end;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 18px !important;
+        }
+
+        >div:nth-of-type(1) {
+            flex-direction: column;
+
+            >p:first-of-type {
+                min-width: 100%;
+            }
+        }
+
+        >div:nth-of-type(2) {
+            flex-direction: column;
+
+            >div:nth-of-type(2){
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .skills {
+        width: auto;
+        justify-content: center;
+
+        img {
+            filter: none !important;
+        }
+    }
+}

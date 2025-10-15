@@ -141,3 +141,44 @@ section {
 .third-card {
     @include colleagues-card($img-url: '/img/03_Stickers/02_Testimonials/Color option 1/A_new.png', $rotate: 5deg, $z-index: 5);
 }
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile();
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+
+        h2 {
+            text-align: end;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 18px !important;
+        }
+        
+        >div:nth-of-type(2) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .second-card {
+        position: static;
+        top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .first-card, .second-card, .third-card {
+        max-width: 500px;
+        width: auto;
+
+        >div {
+            gap: 45px;
+        }
+    }
+}
