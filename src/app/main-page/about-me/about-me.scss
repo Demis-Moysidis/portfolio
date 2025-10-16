@@ -151,6 +151,10 @@ section {
 
         h2 {
             font-size: 48px;
+
+            &::before {
+                top: 50px;
+            }
         }
 
         p, a {

@@ -274,6 +274,10 @@ h2 {
 
         h2 {
             font-size: 48px;
+
+            &::before {
+                top: 50px;
+            }
         }
 
         p:not(.logo) {
