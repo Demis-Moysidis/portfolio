@@ -1,5 +1,35 @@
 @use './../../../styles.scss' as *;
 
+@mixin switch-btn($color, $img-url, $hover-color){
+    font-family: "Bricolage Grotesque";
+    background: none;
+    border: none;
+    color: $color;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 125ms ease;
+    padding: 0;
+    position: relative;
+    align-self: flex-start;
+    padding-left: 40px;
+    display: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &::before {
+        content: '';
+        background: url($img-url) no-repeat center/contain;
+        position: absolute;
+        top: -4px;
+        left: 0;
+        height: 30px;
+        width: 30px;
+    }
+}
+
 * {
     color: #0E1013;
 }
@@ -22,6 +52,10 @@ p {
     font-size: 20px;
 }
 
+.go-back {
+    @include switch-btn($color: #0E1013, $img-url: '/img/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png', $hover-color: #F87A55);
+}
+
 @media (max-width: 1200px) {
     section {
         @include container-section-mobile();
@@ -33,5 +67,11 @@ p {
 
     h3 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .go-back {
+        display: block;
     }
 }
