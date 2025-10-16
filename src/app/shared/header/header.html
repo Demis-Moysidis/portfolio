@@ -27,10 +27,10 @@
             </div>
         </div>
 
-        <a routerLink='/' fragment="about-me" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}">{{ 'header.about-me' | translate }}</a>
-        <a routerLink='/' fragment="skills" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
-        <a routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
-        <a routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
+        <a (click)="toggleResponsiveMenu()" routerLink='/' fragment="about-me">{{ 'header.about-me' | translate }}</a>
+        <a (click)="toggleResponsiveMenu()" routerLink='/' fragment="skills" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+        <a (click)="toggleResponsiveMenu()" routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
+        <a (click)="toggleResponsiveMenu()" routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
 
         <div class="language-toggle show-responsive">
             <p (click)="toggleLanguage('en')" [ngClass]="language.currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>
@@ -39,6 +39,20 @@
                 <div [ngClass]="language.currentLanguage == 'en' ? 'en' : 'de' "></div>
             </div>
             <p (click)="toggleLanguage('de')" [ngClass]="language.currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
+        </div>
+
+        <div class="contact-links">
+            <a href="https://github.com/Demis-Moysidis" target="_blank">
+                <img src="./icon/git-hub.svg" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/demis-moysidis-255608244/" target="_blank">
+                <img src="./icon/linkedIn.svg" alt="">
+            </a>
+
+            <a href="mailto:demis.moysidis@outlook.de">
+                <img src="./icon/email.svg" alt="">
+            </a>
         </div>
     </div>
     

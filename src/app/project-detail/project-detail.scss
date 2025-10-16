@@ -257,6 +257,8 @@ section {
 @media (max-width: 1000px) {
     section {
         padding-top: 110px;
+        @include container-section-mobile();
+
 
         >div{
             flex-direction: column;
@@ -306,7 +308,7 @@ section {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 370px) {
     .go-back {
         top: auto;
         right: auto;

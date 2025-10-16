@@ -1,7 +1,7 @@
 @use './../../../styles.scss' as *;
 
 :host {
-    background: url('/img/01_Background/Img Original Size/Skills BG_new.png') no-repeat bottom/cover;
+    background: url('/img/01_Background/Img Original Size/Skills BG_com.jpg') no-repeat bottom/cover;
     display: block;
     height: 350px;
 }
@@ -11,4 +11,20 @@ section {
     display: flex;
     align-items: center;
     @include container-section();
+}
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile();
+    }
+
+    h2 {
+        font-size: 48px;
+        hyphens: auto;
+        margin-top: 60px;
+    }
+
+    :host {
+        height: 300px;
+    }
 }
