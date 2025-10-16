@@ -1,15 +1,10 @@
 <section class="hero">
     
     <div class="container">  
-        <div>
+        <div class="hero-content">
             <p [attr.i-am]= "('hero.i-am' | translate)" class="hello-world">
                 {{ 'hero.hello' | translate}}
             </p>
-
-            <div class="polaroid">
-                <img src="./img/03_Stickers/Polaroid Frame_new.png" alt=""> 
-                <img src="./photo/Moysidis_Demis_KB.jpg" alt="">
-            </div>
 
             <h1>
                 <p class="letter-assignment-frontend">
@@ -36,6 +31,11 @@
             </h1>
 
             <a routerLink='/' fragment="contact" class="get-in-touch">{{ 'hero.get-in-touch' | translate }} </a>        
+        
+            <div class="polaroid">
+                <img src="./img/03_Stickers/Polaroid Frame_new.png" alt=""> 
+                <img src="./photo/Moysidis_Demis_KB.jpg" alt="">
+            </div>
         </div>
         
         <div class="contact">

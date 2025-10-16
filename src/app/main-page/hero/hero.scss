@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100vh;
+    min-height: 900px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -287,5 +288,82 @@ h1 {
 
     span:nth-of-type(9){
         @include letter-switch('R', 'r');
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        @include container-section-mobile();
+    }
+}
+
+@media (max-width: 950px) {
+    .container {  
+        >div:first-of-type {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: clamp(1rem, 15vw, 140px);
+        white-space: nowrap;
+        
+        p:nth-of-type(2){
+            text-align: left;
+        }
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-40px);
+    }
+
+    .get-in-touch {
+        position: relative;
+        bottom: -30px;
+        width: fit-content;
+        align-self: flex-end;
+
+        &:hover {
+            bottom: -30px;;
+            transform: translate(2px, 4px);
+        }
+    }
+
+    .hello-world {
+        position: relative;
+        top: -20px; 
+    }
+
+    .polaroid {
+        position: relative;
+        bottom: -40px;
+        align-self: center;
+
+        img:nth-of-type(1) {
+            position: relative;
+            top: 50px;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%) rotate(10deg);
+        }
+
+        img:nth-of-type(2){
+            position: absolute;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%) rotate(10deg);
+            top: 56px;
+        }
+
+        &::before {
+            right: 70px;
+            top: 255px;
+        }
     }
 }

@@ -165,3 +165,17 @@ nav {
 
     @include language-select-transition($rotation: 0deg, $inset: 100% 0 0 100%);
 }
+
+@media (max-width: 1200px) {
+    nav {
+        @include container-section-mobile();
+
+        a:not(:first-child) {
+            display: none;
+        }
+
+        .language-toggle {
+            display: none;
+        }
+    }
+}
