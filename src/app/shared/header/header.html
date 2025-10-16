@@ -14,4 +14,32 @@
         </div>
         <p (click)="toggleLanguage('de')" [ngClass]="language.currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
     </div>
+
+    <div (click)="toggleResponsiveMenu()">
+       <img src="./icon/menu.svg" alt=""> 
+    </div>
+
+    <div class="responsive-menu" [ngClass]="{'show-menu': openResponsiveMenu}">
+        <div>
+            <a class="logo" routerLink="/">DM</a>           
+            <div class="close-btn" (click)="toggleResponsiveMenu()">
+                <img src="./icon/close.svg" alt="">
+            </div>
+        </div>
+
+        <a routerLink='/' fragment="about-me" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}">{{ 'header.about-me' | translate }}</a>
+        <a routerLink='/' fragment="skills" [ngStyle]="headerForProjectDetail ? { 'color': 'black' } : {}" [ngClass]="language.currentLanguage == 'de' ? 'contact-de' : '' ">{{ 'header.skills' | translate }} </a>
+        <a routerLink='/' fragment="projects">{{ 'header.projects' | translate }}</a>
+        <a routerLink='/' fragment="contact">{{ 'header.contact' | translate }}</a>  
+
+        <div class="language-toggle show-responsive">
+            <p (click)="toggleLanguage('en')" [ngClass]="language.currentLanguage == 'en' ? 'language-active' : 'language-inactive-en'">EN</p>
+            <div class="toggle-btn">
+                <div></div>
+                <div [ngClass]="language.currentLanguage == 'en' ? 'en' : 'de' "></div>
+            </div>
+            <p (click)="toggleLanguage('de')" [ngClass]="language.currentLanguage == 'de' ? 'language-active' : 'language-inactive-de'">DE</p>
+        </div>
+    </div>
+    
 </nav>

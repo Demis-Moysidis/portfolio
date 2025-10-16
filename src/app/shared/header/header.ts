@@ -14,11 +14,17 @@ export class Header {
   public language = inject(LanguageService);
   private translate = inject(TranslateService);
 
+  openResponsiveMenu = false;
+
   @Input() headerForProjectDetail = false;
 
   toggleLanguage(language: string) {
       this.language.currentLanguage = language;
       this.translate.use(language);
       document.documentElement.lang = language;
+  }
+
+  toggleResponsiveMenu() {
+    this.openResponsiveMenu = !this.openResponsiveMenu;
   }
 }

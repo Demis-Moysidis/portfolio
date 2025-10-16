@@ -44,12 +44,16 @@ nav {
     align-items: center;
     @include container-hero-and-header();
     
-    a:not(:first-child) {
+    >a:not(:first-child) {
         text-decoration: none;
         color: $font-color-white;
         font-size: 20px;
         font-weight: bold;
-    }    
+    }   
+    
+    >div:nth-of-type(2) {
+        display: none;
+    }
 }
 
 .logo {
@@ -131,6 +135,10 @@ nav {
     cursor: default;
 }
 
+.responsive-menu {
+    display: none;
+}
+
 @mixin language-select-transition($rotation: 180deg, $inset: 100% 0 0 100%){
     &::before {
         content: '';
@@ -169,13 +177,122 @@ nav {
 @media (max-width: 1200px) {
     nav {
         @include container-section-mobile();
+    }
+}
 
-        a:not(:first-child) {
+@media (max-width: 900px) {
+    nav {
+            
+        >div:nth-of-type(2) {
+            display: block;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                img {
+                    filter: brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2680%) hue-rotate(228deg) brightness(114%) contrast(102%);
+                }
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+            img {
+                transition: all 225ms ease;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 5;
+                width: 32px;
+                height: 32px;
+                background: url('/img/00_Hand-drawn lines/00_Header/Menu - Mobile icon/00_while pressing 1.png') no-repeat center/contain;
+                opacity: 0;
+                transition: all 225ms ease;
+            }
+        }
+
+        >a:not(:first-child) {
             display: none;
         }
 
         .language-toggle {
             display: none;
+        }
+
+        .show-responsive {
+            display: flex;
+        }
+    }
+
+    .responsive-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 20px 100px 20px;
+        background: url('/img/01_Background/Design Size Relation@3x/01_Hero_new.png') no-repeat center bottom/cover;
+        transform: translateY(-100%);
+        transition: all 300ms ease-in-out;
+
+        &.show-menu {
+            transform: translateY(0);
+        }
+
+        >a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        >div:first-of-type {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .close-btn {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img {
+            transition: all 225ms ease;
+        }
+        
+        &::before {
+            content: '';
+            background: url('/img/00_Hand-drawn lines/00_Header/Menu - Mobile icon/00_While pressing 2.png') no-repeat center/contain;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 225ms ease;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+
+            img {
+                filter: brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2680%) hue-rotate(228deg) brightness(114%) contrast(102%);
+            }
         }
     }
 }
