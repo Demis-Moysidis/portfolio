@@ -18,8 +18,7 @@
     display: block;
     height: fit-content;
     min-height: 100vh;
-    background: url('/img/01_Background/Design Size Relation@3x/Note book paper_com.jpg') no-repeat calc(50% + 100px) / calc(100% + 200px) 100%, linear-gradient(#1d1d1d);
-    
+    background: url('/img/01_Background/Design Size Relation@3x/Note book paper_com.jpg') no-repeat calc(50% + 100px) / calc(100% + 200px) 100%; 
 }
 
 section {
@@ -242,5 +241,88 @@ section {
     * {
         color: #0E1013;
         fill: #0E1013
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        @include container-section-mobile-project-detail();
+
+        .sticker-round {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding-top: 110px;
+
+        >div{
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        font-size: 48px;
+
+        &::before {
+            top: 50px !important;
+        }
+    }
+
+    p {
+        font-size: 18px !important;
+    }
+
+    :host {
+        background: url('/img/01_Background/Design Size Relation@3x/Note book paper_com_rotate.jpg') no-repeat left top / auto 140%;
+    }
+
+    .go-back {
+        top: auto;
+        right: auto;
+        left: 50px;
+        bottom: 50px;
+        color: white;
+    }
+
+    .next-project {
+        top: auto;
+        right: 50px;
+        left: auto;
+        bottom: 50px;
+    }
+
+    .right-content {
+
+        >img {
+            max-height: 340px;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            align-self: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .go-back {
+        top: auto;
+        right: auto;
+        left: 50px;
+        bottom: 70px;
+        color: white;
+    }
+
+    .next-project {
+        top: auto;
+        right: 50px;
+        left: auto;
+        bottom: 30px;
+    }
+
+    .right-content > div {
+        gap: 20px;
     }
 }

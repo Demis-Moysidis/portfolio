@@ -70,3 +70,8 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
 };
+
+@mixin container-section-mobile-project-detail(){
+    padding-left: 50px;
+    padding-right: 50px;
+};
