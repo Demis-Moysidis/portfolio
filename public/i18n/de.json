@@ -35,7 +35,7 @@
         "title": "Projekte",
         "description": "Entdecke meine Projekte! Sie sind responsiv, benutzerfreundlich und mit sauberem, effizientem Code entwickelt - für reibungslose Performance auf jedem Gerät.",
         "details": "Projektdetails",
-        "progress": "In Arbeit",
+        "progress": "Leitprojekt",
         "all-details": "Alle Details ansehen",
         "join": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
         "el-pollo-loco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
@@ -155,7 +155,7 @@
             "description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
             "implementation": "Im Team habe ich einen Task Manager im Kanban-Stil mit Angular, TypeScript und Firebase entwickelt. Dabei habe ich die Drag-and-Drop-Funktionalität, das Log-In und den Service für den Datenaustausch der Kontaktdaten umgesetzt. Das Projekt zeigt meine Fähigkeit, sowohl eigenständig als auch im Team effizient zu arbeiten.",
             "duration": "5 Wochen",
-            "round-text-top": "In Arbeit",
+            "round-text-top": "Leitprojekt",
             "round-text-bottom": "Alle Details ansehen"
         },
         "epl": {

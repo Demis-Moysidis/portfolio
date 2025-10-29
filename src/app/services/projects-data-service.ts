@@ -38,9 +38,11 @@ export class ProjectsDataService {
       round_img: './img/03_Stickers/00_Round/08_ Color option 3 - C_new.png',
       round_text_top: 'project.join.round-text-top',
       round_text_bottom: 'project.join.round-text-bottom',
-      github: false,
-      live_test: false,
-      in_progress: true
+      github: true,
+      live_test: true,
+      in_progress: true,
+      github_link: 'https://github.com/Demis-Moysidis/join',
+      live_test_link: 'https://join.demis-moysidis.com'
     },
     {
       id: 2,

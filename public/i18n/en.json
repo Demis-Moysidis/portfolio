@@ -35,7 +35,7 @@
         "title": "Projects",
         "description": "Explore my projects! They're built to be responsive, user-friendly, and powered by clean, efficient code for smooth performance on any device.",
         "details": "Project details",
-        "progress": "In Progress",
+        "progress": "Featured Project",
         "all-details": "Check all details",
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "el-pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
@@ -155,7 +155,7 @@
             "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             "implementation": "As part of a team, I developed a Kanban-style task manager using Angular, TypeScript, and Firebase. I was responsible for implementing the drag-and-drop functionality, the login system, and the service for exchanging contact data. This project demonstrates my ability to work efficiently both independently and as part of a team.",
             "duration": "5 weeks",
-            "round-text-top": "In Progress",
+            "round-text-top": "Featured Project",
             "round-text-bottom": "Check all details"
         },
         "epl": {
