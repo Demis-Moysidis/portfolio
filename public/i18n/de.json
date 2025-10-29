@@ -33,7 +33,7 @@
     "projects": {
         "craft": "MEIN HANDWERK",
         "title": "Projekte",
-        "description": "Entdecke meine Projekte! Sie sind responsiv, benutzerfreundlich und mit sauberem, effizientem Code entwickelt – für reibungslose Performance auf jedem Gerät.",
+        "description": "Entdecke meine Projekte! Sie sind responsiv, benutzerfreundlich und mit sauberem, effizientem Code entwickelt - für reibungslose Performance auf jedem Gerät.",
         "details": "Projektdetails",
         "progress": "In Arbeit",
         "all-details": "Alle Details ansehen",
@@ -46,18 +46,18 @@
         "words": "IN IHREN WORTEN",
         "title": "Kommentare der Kollegen",
         "first-card": {
-            "comment": "Demis hat das Team wirklich mit seiner großartigen Organisation und klaren Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
-            "author": "Tobias Lange",
+            "comment": "Demis arbeitet äußerst präzise und legt großen Wert darauf, technische Anforderungen vollständig zu verstehen. Seine strukturierte und organisierte Arbeitsweise zeigt sich in einem durchgehend sauberen, gut lesbaren Code. Er bringt sich mit vollem Einsatz ins Team ein und trägt mit seinem Engagement maßgeblich dazu bei, dass gemeinsame Ziele erreicht werden.",
+            "author": "Tobias Dreifke",
             "profession": "Frontend Entwickler"
         },
         "second-card": {
-            "comment": "Es war eine große Freude, mit Demis zusammenzuarbeiten. Er weiß, wie man Teammitglieder motiviert und ermutigt, die bestmögliche Arbeit zu präsentieren, und bringt immer neue Ideen ins Brainstorming ein.",
-            "author": "Maria Schäfer",
-            "profession": "Frontend Entwicklerin"
+            "comment": "Ich arbeitete eng mit Demis zusammen und konnte sein hohes Maß an Kompetenz und seinen organisierten Arbeitsansatz beobachten. Er arbeitet effektiv und mit großer Präzision und zeigt außergewöhnliches Talent bei der Lösung komplexer Probleme. Besonders beeindruckend sind sein analytisches Denken und sein ruhiger und gelassener Umgang mit Herausforderungen.",
+            "author": "Amer Alkhalidy",
+            "profession": "Frontend Entwickler"
         },
         "third-card": {
-            "comment": "Demis war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
-            "author": "David Braun",
+            "comment": "Demis zeichnet sich durch hervorragende Fachkenntnisse und eine ausgeprägte Fähigkeit aus, Wissen effektiv und nachvollziehbar zu vermitteln. Besonders bei der Fehlersuche zeigt er großes Engagement und unterstützt auch dann, wenn es nicht direkt sein Aufgabenbereich ist. Die Zusammenarbeit und Kommunikation mit ihm sind jederzeit angenehm, offen und effektiv.",
+            "author": "Julian Kohn",
             "profession": "Frontend Entwickler"
         },
         "profile": "Profil"
@@ -153,7 +153,7 @@
         "join": {
             "title": "Join",
             "description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
-            "implementation": "Im Team habe ich einen Task Manager im Kanban-Stil mit Angular, TypeScript und Firebase entwickelt. Dabei habe ich die Drag-and-Drop-Funktionalität, die Benutzerverwaltung und die strukturierte Organisation der Aufgaben umgesetzt. Das Projekt zeigt meine Fähigkeit, sowohl eigenständig als auch im Team effizient zu arbeiten.",
+            "implementation": "Im Team habe ich einen Task Manager im Kanban-Stil mit Angular, TypeScript und Firebase entwickelt. Dabei habe ich die Drag-and-Drop-Funktionalität, das Log-In und den Service für den Datenaustausch der Kontaktdaten umgesetzt. Das Projekt zeigt meine Fähigkeit, sowohl eigenständig als auch im Team effizient zu arbeiten.",
             "duration": "5 Wochen",
             "round-text-top": "In Arbeit",
             "round-text-bottom": "Alle Details ansehen"

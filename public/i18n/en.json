@@ -46,18 +46,18 @@
         "words": "IN THEIR WORDS",
         "title": "Colleagues' Thoughts",
         "first-card": {
-            "comment": "Demis really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
-            "author": "Tobias Lange",
+            "comment": "Demis works with great precision and places a strong emphasis on fully understanding technical requirements. His structured and organized approach is reflected in consistently clean and well-readable code. He is fully committed to the team and contributes significantly to achieving shared goals through his dedication and engagement.",
+            "author": "Tobias Dreifke",
             "profession": "Frontend Developer"
         },
         "second-card": {
-            "comment": "It was a great pleasure to work with Demis. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm.",
-            "author": "Maria Schäfer",
+            "comment": "I worked closely with Demis and was able to observe his high level of competence and organized approach to work. He operates effectively and with great precision, demonstrating exceptional talent in solving complex problems. What stands out most is his analytical thinking and his calm, composed manner when facing challenges.",
+            "author": "Amer Alkhalidy",
             "profession": "Frontend Developer"
         },
         "third-card": {
-            "comment": "Demis was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
-            "author": "David Braun",
+            "comment": "Demis stands out for his excellent technical expertise and his strong ability to convey knowledge effectively and clearly. He shows great dedication when it comes to troubleshooting and offers support even beyond his direct responsibilities. Working and communicating with him is always pleasant, open, and highly effective.",
+            "author": "Julian Kohn",
             "profession": "Frontend Developer"
         },
         "profile": "Profile"
@@ -153,7 +153,7 @@
         "join": {
             "title": "Join",
             "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-            "implementation": "As part of a team, I developed a task manager in the Kanban style using Angular, TypeScript, and Firebase. I implemented the drag-and-drop functionality, user management, and structured task organization. This project demonstrates my ability to work efficiently both independently and as part of a team.",
+            "implementation": "As part of a team, I developed a Kanban-style task manager using Angular, TypeScript, and Firebase. I was responsible for implementing the drag-and-drop functionality, the login system, and the service for exchanging contact data. This project demonstrates my ability to work efficiently both independently and as part of a team.",
             "duration": "5 weeks",
             "round-text-top": "In Progress",
             "round-text-bottom": "Check all details"

@@ -60,6 +60,8 @@
             align-self: flex-end;
             position: relative;
             cursor: pointer;
+            text-decoration: none;
+            transition: all 225ms ease;
             
             &::before {
                 content: '';
@@ -70,6 +72,7 @@
                 top: -5px;
                 left: -35px;
                 filter: invert(1);
+                transition: all 225ms ease;
             }
 
             &:hover::before {
